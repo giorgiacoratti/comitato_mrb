@@ -1,0 +1,8 @@
+{
+  "filter": {
+    "filters": [ ],
+    "logic": "and"
+  },
+  "skip": 0,
+  "take": 15
+}

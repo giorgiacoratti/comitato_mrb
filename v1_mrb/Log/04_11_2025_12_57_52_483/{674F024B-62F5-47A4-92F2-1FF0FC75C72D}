@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="details" type="S" value="{0458649D-6156-4DDF-80F8-C21FCCED4E10}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45965.5402156597"/>
+				<Prp name="start time" type="D" value="45965.5402056713"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="name" type="S" value="TC0006_PATCH_GenBindingDir [Script\TC0006_PATCH_GenBindingDir - TC0006_PATCH_GenBindingDir]"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="details" type="S" value="{34A67B66-2CC5-4A40-8ECC-FC3392B639C2}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45965.5402056713"/>
+				<Prp name="start time" type="D" value="45965.5402020023"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="TC0005_GET_GenBindingDirID [Script\TC0005_GET_GenBindingDirID - TC0005_GET_GenBindingDirID]"/>
+				<Prp name="status" type="I" value="1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="details" type="S" value="{835B397C-1955-446C-9E1C-5E2783646233}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45965.5403644907"/>
+				<Prp name="start time" type="D" value="45965.5402157755"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="name" type="S" value="TC0008_PATCH_Attributes [Script\TC0008_PATCH_Attributes - TC0008_PATCH_Attributes]"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="details" type="S" value="{FA957239-B480-47BA-9971-7A74ACB1B89D}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45965.5402020023"/>
+				<Prp name="start time" type="D" value="45965.5401947917"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="Script Test Log [TC0002_POST_Search\TC0002_POST_Search]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

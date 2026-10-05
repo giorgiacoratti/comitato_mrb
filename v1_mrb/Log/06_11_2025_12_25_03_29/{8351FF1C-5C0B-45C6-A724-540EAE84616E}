@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45967.5174648148"/>
+				<Prp name="start time" type="D" value="45967.5174612037"/>
+				<Prp name="details" type="S" value="{5918D12F-2965-4811-9497-5F308BEBE864}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="TC0006_PATCH_GenBindingDir [Script\TC0006_PATCH_GenBindingDir - TC0006_PATCH_GenBindingDir]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45967.5174136227"/>
+				<Prp name="start time" type="D" value="45967.517410544"/>
+				<Prp name="details" type="S" value="{70949DD8-90B8-43AA-87D0-2FA37B1B261F}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="Script Test Log [TC0005_GET_GenBindingDirID\TC0005_GET_GenBindingDirID]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="45967.5174610995"/>
+				<Prp name="start time" type="D" value="45967.5174136227"/>
+				<Prp name="details" type="S" value="{3884F341-18FD-46A9-80D1-F0FFEFC5B0E2}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="TC0003_POST_CreateGenBindingDirective [Script\TC0003_POST_CreateGenBindingDirective - TC0003_POST_CreateGenBindingDirective]"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="1"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

@@ -1,0 +1,176 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/quarterly-reports/{reportId}/quarterly-details/search (TC0011)
+  response body: ListResultQuarterlyDetailDto
+"""
+ListResultQuarterlyDetailDto = Schema(
+  {
+    Optional("data"): [
+      {
+        Optional("id"): int,
+        Optional("mrbReportId"): int,
+        Optional("bank"): {
+          Optional("abi"): str,
+          Optional("name"): str
+        },
+        Optional("monitoring"): bool,
+        Optional("classification"): {
+          Optional("id"): int,
+          Optional("classification"): Or(None, str)
+        },
+        Optional("completedSections"): int,
+        Optional("totalSections"): int,
+        Optional("actionPlan"): {
+          Optional("actionType"): str,
+          Optional("requested"): bool,
+          Optional("description"): Or(None, str),
+          Optional("leastOneEvaluated"): bool,
+          Optional("areas"): Or(None, [
+            {
+              Optional("id"): int,
+              Optional("area"): str,
+              Optional("areaName"): str,
+              Optional("required"): bool
+            }
+          ])
+        },
+        Optional("directive"): {
+          Optional("actionType"): str,
+          Optional("requested"): bool,
+          Optional("description"): Or(None, str),
+          Optional("leastOneEvaluated"): bool,
+          Optional("areas"): Or(None, [
+            {
+              Optional("id"): int,
+              Optional("area"): str,
+              Optional("areaName"): str,
+              Optional("required"): bool
+            }
+          ])
+        },
+        Optional("objectives"): {
+          Optional("actionType"): str,
+          Optional("requested"): bool,
+          Optional("description"): Or(None, str),
+          Optional("leastOneEvaluated"): bool,
+          Optional("areas"): Or(None, [
+            {
+              Optional("id"): int,
+              Optional("area"): str,
+              Optional("areaName"): str,
+              Optional("required"): bool
+            }
+          ])
+        }
+      }
+    ],
+    Optional("total"): int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia PATCH /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/update (TC0012) 
+    e per l'interfaccia GET /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId} (TC0013)
+  response body: QuarterlyDetailDetailDto
+"""
+QuarterlyDetailDetailDto = Schema(
+  {
+    "id": int,
+    "mrbReport": {
+      "id": int,
+      "quarter": int,
+      "year": int,
+      "status": str,
+      Optional("committeeDate"): str,
+      Optional("cdaDate"): str,
+      Optional("closureDate"): Or(None, str)
+    },
+    "bank": {
+      "abi": str,
+      Optional("name"): str
+    },
+    "monitoring": bool,
+     Optional("classification"): {
+      "id": int,
+      "classification": Or(None, str),
+      Optional("areaElements"): [
+        {
+          "elementId": int,
+          "area": str,
+          "areaName": str,
+          "visible": bool
+        }
+      ]
+    },
+    "completedSections": int,
+    "totalSections": int,
+    "actions": [
+      {
+        "actionType": str,
+        "requested": bool,
+        "description": Or(None, str),
+        "leastOneEvaluated": bool,
+        "areas": [
+          {
+            "id": int,
+            "area": str,
+            "areaName": str,
+            "required": bool
+          }
+        ]
+      }
+    ]
+  }
+)
+
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/classifications (TC0014)
+  response body: ListResultClassificationWithElementDto
+"""
+ListResultClassificationWithElementDto = Schema(
+  {
+    Optional("data"): [
+      {
+        "id": int,
+        "classification": str,
+        Optional("areaElements"): Or(None, [
+          {
+            "elementId": int,
+            "area": str,
+            "areaName": str,
+            "visible": bool
+          }
+        ])
+      }
+    ],
+    Optional("total"): int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/{reportId}/quarterly-details/classifications (TC0015)
+  response body: ListResultClassificationDto
+"""
+ListResultClassificationDto = Schema(
+  {
+    Optional("data"): [
+      {
+        "id": int,
+        "classification": str
+      }
+    ],
+    Optional("total"): int
+  }
+)

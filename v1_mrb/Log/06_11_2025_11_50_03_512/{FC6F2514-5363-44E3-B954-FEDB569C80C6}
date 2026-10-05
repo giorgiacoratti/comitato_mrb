@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 9">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931163889"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso GeneralBindingDirectiveDto"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="57"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{972EE61A-BA1E-404E-8272-F5EDAFED084A}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931161806"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="41"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931133102"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;id&quot;: 102,&#xA;    &quot;banks&quot;: &quot;test1&quot;,&#xA;    &quot;owner&quot;: {&#xA;        &quot;id&quot;: 2,&#xA;        &quot;area&quot;: &quot;AUDIT&quot;,&#xA;        &quot;areaName&quot;: &quot;Audit&quot;&#xA;    },&#xA;    &quot;feedbackDeadlineDate&quot;: &quot;2025-11-12&quot;,&#xA;    &quot;committeeDate&quot;: &quot;2025-11-22&quot;,&#xA;    &quot;subject&quot;: &quot;test1 oggetto&quot;,&#xA;    &quot;feedback&quot;: &quot;test1 RISCONTRO&quot;,&#xA;    &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;    &quot;evaluation&quot;: null&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 10">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931164352"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;id&quot;: 102,&#xA;    &quot;banks&quot;: &quot;test1&quot;,&#xA;    &quot;owner&quot;: {&#xA;        &quot;id&quot;: 2,&#xA;        &quot;area&quot;: &quot;AUDIT&quot;,&#xA;        &quot;areaName&quot;: &quot;Audit&quot;&#xA;    },&#xA;    &quot;feedbackDeadlineDate&quot;: &quot;2025-11-12&quot;,&#xA;    &quot;committeeDate&quot;: &quot;2025-11-22&quot;,&#xA;    &quot;subject&quot;: &quot;test1 oggetto&quot;,&#xA;    &quot;feedback&quot;: &quot;test1 RISCONTRO&quot;,&#xA;    &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;    &quot;evaluation&quot;: null&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="58"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931161574"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="37"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931131944"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Body recuperato: {&#xA;    &quot;id&quot;: 102,&#xA;    &quot;banks&quot;: &quot;test1&quot;,&#xA;    &quot;owner&quot;: {&#xA;        &quot;id&quot;: 2,&#xA;        &quot;area&quot;: &quot;AUDIT&quot;,&#xA;        &quot;areaName&quot;: &quot;Audit&quot;&#xA;    },&#xA;    &quot;feedbackDeadlineDate&quot;: &quot;2025-11-12&quot;,&#xA;    &quot;committeeDate&quot;: &quot;2025-11-22&quot;,&#xA;    &quot;subject&quot;: &quot;test1 oggetto&quot;,&#xA;    &quot;feedback&quot;: &quot;test1 RISCONTRO&quot;,&#xA;    &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;    &quot;evaluation&quot;: null&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931160069"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/general-binding-directives/102 ha risposto con status: 200 OK"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931131134"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 0: Importo le project varibles e estraggo il body dal file ./TestData/requests/body/W2_TC0006_patch_general_binding.json"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931158102"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="The 'PATCH' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/102' was sent with the status code 200."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;id&quot;:102,&quot;banks&quot;:&quot;test1&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-12&quot;,&quot;committeeDate&quot;:&quot;2025-11-22&quot;,&quot;subject&quot;:&quot;test1 oggetto&quot;,&quot;feedback&quot;:&quot;test1 RISCONTRO&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Thu, 06 Nov 2025 10:49:43 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-477d0c69e91f313075133432 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 23&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931131944"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="25"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4931134259"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="message" type="S" value="Sending the 'PATCH' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/102'."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

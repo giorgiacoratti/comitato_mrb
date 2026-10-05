@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 3">
+			<Prp name="date" type="D" value="45967.4830514352"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/bulk-delete' was sent with the status code 415."/>
+			<Prp name="remarks" type="S" value="Response status text: Unsupported Media Type&#xA;&#xA;Response body:&#xA;&#xA;&#xA;All response headers:&#xA;Connection: close&#xA;Date: Thu, 06 Nov 2025 10:35:13 GMT&#xA;Server: &#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-e1790c69731f7b6e45d1befc 0&#xA;Accept: */*&#xA;Authorization: Bearer eyJraWQiOiJTWTRPRGlWenJrRjhNRjdlVE02ZXJFQjRNMXNxZlh2aktOdEZQZ0p3MXRBIiwidHlwIjoiYXBwbGljYXRpb24vb2t0YS1pbnRlcm5hbC1hdCtqd3QiLCJhbGciOiJSUzI1NiJ9.eyJ2ZXIiOjEsImp0aSI6IkFULmNfVlN6bEFGUWNNaEc4V2tYVFNnNmtHd1hITGpfd0VpY2lKSlVGZkRJWlUiLCJpc3MiOiJodHRwczovL2xvZ2luLXRlc3QuY2Fzc2FjZW50cmFsZS5pdCIsImF1ZCI6Imh0dHBzOi8vbG9naW4tdGVzdC5jYXNzYWNlbnRyYWxlLml0Iiwic3ViIjoiQ0M5MDIxQG9rdGFzb3VyY2VkLmNvbSIsImlhdCI6MTc2MjQyNDk4MywiZXhwIjoxNzYyNDI4NTgzLCJjaWQiOiIwb2E4MDR6ZXQ5TWpRclVtTTB4NyIsInVpZCI6IjAwdTgwNWVtaGNtQ1JveW5NMHg3Iiwic2NwIjpbIm9wZW5pZCIsImVtYWlsIiwicHJvZmlsZSJdLCJhdXRoX3RpbWUiOjE3NjI0MjQ5ODF9.eCCWYb39wWPKpv7pSR8l_eOFkgf0Cbut4Liwmn_K1n-eZet4rCfaxXE18XCJNKM1qeut9ReAvXbclnmxQNSOHMgFQV44JGsPokdr8npG1kZmLLlNxFFUpkbY0SiN9fTa2_zvzUT4CM_VSJEYz7fYNCdprr8zEaIeWWoogfwHOSmHSaFkbnNyyBRb3rvkFMLuCk5bOOHmAjEJlPd7Dxd_OzAUVCWbUIQnbTfV0OVQT8nKIsKqTueII7MxNyYRDs5BiYM4cMDZWgDMGBDxH7ocvjQv2pXdqnKBvGpWlBepm1-PonY3Z4xPxqR7UjmrStkh8YgRn9we7aWiz8Zd1QsIag&#xA;Host: apimanager.integrazione.servizi.allitude.it:8065&#xA;User-Agent: Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)&#xA;&#xA;"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="date" type="D" value="45967.4830492593"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="message" type="S" value="Sending the 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/bulk-delete'."/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{70257967-9B5F-4921-A0DA-B823943232D8}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="date" type="D" value="45967.4830563657"/>
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="message" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;The test run has stopped because --&lt;/p&gt;&lt;ul&gt;&lt;li&gt;An error message was posted to the log and&lt;/li&gt;&lt;li&gt;The &lt;a href=&quot;aqa-help://6090&quot;&gt;On error&lt;/a&gt; project property is set to &quot;Stop project&quot; or &quot;Stop current item&quot;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If you don't want the test to stop on errors, set this property (&lt;b&gt;Project Editor &amp;rArr; Properties &amp;rArr; Playback&lt;/b&gt;), to &quot;Continue running&quot; or change your test commands so that they do not post errors to the log automatically. For example, if a window or process was not found, use WaitWindow, WaitProcess or similar methods to get the needed object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2207&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value="Picture4.png"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 1">
+			<Prp name="date" type="D" value="45967.4830491204"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="date" type="D" value="45967.4830540278"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="picture" type="S" value="Picture3.png"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="stacktext" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="28"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="stacktext" type="S" value="TC0004_POST_BulkDelete"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="28"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="date" type="D" value="45967.4830515509"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/general-binding-directives/bulk-delete ha risposto con status: 415 Unsupported Media Type"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="date" type="D" value="45967.4830488426"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 0: Estraggo il body dal file ./TestData/requests/body/W2_TC0004_post_bulk_delete.json"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>

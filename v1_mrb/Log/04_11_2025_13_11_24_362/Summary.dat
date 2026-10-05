@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The child test TC0008_PATCH_Attributes failed"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The child test TC0006_PATCH_GenBindingDir failed"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5495915278"/>
+						<Prp name="duration" type="I" value="2735"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5ADQAQwA1ADQAQgAxADMALQBFAEMAMAAwAC0ANAAwAEEARgAtAEEARABEADAALQA2ADAAOABGAEMARQBGADMAQgBFAEQANwB9AC8AewAzAEMAMgBEADAANQA1AEYALQBCAEIAMAA0AC0ANAA2ADAAMgAtAEIANwBCAEQALQAxADIAQQA1AEIANwAzAEYARQBFADcAQQB9AC8AGhHL3v86Z0CLViaRMGjlQwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="671"/>
+						<Prp name="name" type="S" value="TC0002_POST_Search"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;d6a272f3-3f87-43a6-9498-755fae2e8d03&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5496025579"/>
+						<Prp name="duration" type="I" value="608"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGADUARAA4ADQARgBEAEYALQBCADMANQA2AC0ANABGADYAQQAtADkANQBFADIALQA4ADgANwBGADUARAAxAEYAQwAxAEIAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="608"/>
+						<Prp name="name" type="S" value="TC0006_PATCH_GenBindingDir"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="starttime" type="D" value="45965.5496099421"/>
+						<Prp name="duration" type="I" value="370"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDAEIAOAA4ADAAMwBCADEALQAwAEMANAAzAC0ANABFADkANAAtADkANQAzAEEALQBDADcAMwAyAEEANgA3AEMAMAA3AEMAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="370"/>
+						<Prp name="name" type="S" value="TC0007_GET_Attributes"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="starttime" type="D" value="45965.5495984838"/>
+						<Prp name="duration" type="I" value="337"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzAEMAMQBCADEAOAA0AEIALQA0AEMAQQAwAC0ANAA2AEUAOAAtAEEAQQAyADkALQA0ADgANwA0ADcAQwA3ADIANAA3AEYARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="337"/>
+						<Prp name="name" type="S" value="TC0005_GET_GenBindingDirID"/>
+					</Node>
+					<Node name="test6">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;a02d4337-ea75-44ba-b932-ee9c2a932c22&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5496323611"/>
+						<Prp name="duration" type="I" value="777"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADcAOQAzAEUAMABBADQALQAxADcARgBFAC0ANABEADEANgAtAEIARgAwADIALQA3ADcAMQAyAEIAOQAxADQARgAzAEMANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="777"/>
+						<Prp name="name" type="S" value="TC0004_POST_BulkDelete"/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;4b508b19-6dae-40d4-bc5d-3f7947bd4312&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5496233449"/>
+						<Prp name="duration" type="I" value="770"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEIAMgA0ADIARQBCAEYALQA3ADgAQgBGAC0ANAAyADMAOQAtAEEAOAAxAEEALQAyADkAQwA1AEMAMQA4ADgAQwBGAEUANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="770"/>
+						<Prp name="name" type="S" value="TC0003_POST_CreateGenBindingDirective"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;bd4a3f99-3921-42df-8571-8d1d5bcb07ac&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5496143982"/>
+						<Prp name="duration" type="I" value="749"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADkAQwBBADcANwA0ADgALQAzADcAQgA2AC0ANABFADYAMgAtADgAMgBCADUALQA0ADMARAAxAEUAMwAzAEEAMAA3ADgARgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="durationwithoutchildren" type="I" value="749"/>
+						<Prp name="name" type="S" value="TC0008_PATCH_Attributes"/>
+					</Node>
+				</Node>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="45965.5495915278"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="4282"/>
+				<Prp name="failedtests" type="I" value="5"/>
+				<Prp name="name" type="S" value="v1_mrb"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="key" type="S" value="{60CB03DE-28FD-4D24-A3F5-71E2635FF151}"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="testname" type="S" value="v1_mrb: W2_general_binding"/>
+		<Prp name="starttime" type="D" value="45965.5495875926"/>
+		<Prp name="failedtests" type="I" value="5"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="tests" type="I" value="7"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="name" type="S" value="comitato_mrb"/>
+		<Prp name="stop" type="D" value="45965.5496423727"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,15 @@
+{
+  "id": "",
+  "banks": "banks",
+  "owner": {
+    "id": 0,
+    "area": "string",
+    "areaName": "string"
+  },
+  "feedbackDeadlineDate": "2025-11-03",
+  "committeeDate": "2025-11-03",
+  "subject": "string",
+  "feedback": "string",
+  "status": "ACTIVE",
+  "evaluation": true
+}

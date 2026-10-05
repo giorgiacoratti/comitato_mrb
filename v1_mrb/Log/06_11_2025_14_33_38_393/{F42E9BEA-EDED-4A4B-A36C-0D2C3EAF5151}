@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6066975579"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="message" type="S" value="The 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/search' was sent with the status code 200."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;data&quot;:[{&quot;id&quot;:201,&quot;quarter&quot;:2,&quot;year&quot;:2028,&quot;status&quot;:&quot;IN_PROGRESS&quot;,&quot;committeeDate&quot;:&quot;2025-11-12&quot;,&quot;cdaDate&quot;:&quot;2025-07-09&quot;,&quot;closureDate&quot;:null},{&quot;id&quot;:181,&quot;quarter&quot;:1,&quot;year&quot;:2028,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-11-03&quot;},{&quot;id&quot;:161,&quot;quarter&quot;:4,&quot;year&quot;:2027,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-10-27&quot;},{&quot;id&quot;:141,&quot;quarter&quot;:3,&quot;year&quot;:2027,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-10-23&quot;,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-10-17&quot;},{&quot;id&quot;:122,&quot;quarter&quot;:2,&quot;year&quot;:2027,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-09-30&quot;,&quot;cdaDate&quot;:&quot;2025-09-30&quot;,&quot;closureDate&quot;:&quot;2025-10-16&quot;},{&quot;id&quot;:121,&quot;quarter&quot;:1,&quot;year&quot;:2027,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-09-26&quot;,&quot;cdaDate&quot;:&quot;2025-09-26&quot;,&quot;closureDate&quot;:&quot;2025-09-02&quot;},{&quot;id&quot;:101,&quot;quarter&quot;:4,&quot;year&quot;:2026,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-09-01&quot;},{&quot;id&quot;:85,&quot;quarter&quot;:3,&quot;year&quot;:2026,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-08-23&quot;,&quot;cdaDate&quot;:&quot;2025-09-05&quot;,&quot;closureDate&quot;:&quot;2025-08-29&quot;},{&quot;id&quot;:84,&quot;quarter&quot;:2,&quot;year&quot;:2026,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-08-29&quot;},{&quot;id&quot;:83,&quot;quarter&quot;:1,&quot;year&quot;:2026,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-10-01&quot;,&quot;cdaDate&quot;:&quot;2025-02-08&quot;,&quot;closureDate&quot;:&quot;2025-08-29&quot;},{&quot;id&quot;:82,&quot;quarter&quot;:4,&quot;year&quot;:2025,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-08-29&quot;},{&quot;id&quot;:81,&quot;quarter&quot;:3,&quot;year&quot;:2025,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-08-21&quot;,&quot;cdaDate&quot;:&quot;2025-08-15&quot;,&quot;closureDate&quot;:&quot;2025-08-29&quot;},{&quot;id&quot;:61,&quot;quarter&quot;:2,&quot;year&quot;:2025,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:&quot;2025-08-10&quot;,&quot;cdaDate&quot;:&quot;2025-08-30&quot;,&quot;closureDate&quot;:&quot;2025-08-28&quot;},{&quot;id&quot;:2,&quot;quarter&quot;:1,&quot;year&quot;:2025,&quot;status&quot;:&quot;CLOSED&quot;,&quot;committeeDate&quot;:null,&quot;cdaDate&quot;:null,&quot;closureDate&quot;:&quot;2025-08-26&quot;}],&quot;total&quot;:14}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Thu, 06 Nov 2025 13:33:17 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-9ca30c69ad0024b36a44602b 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 19&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+			<Prp name="date" type="D" value="45967.6067014583"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso ListResultMrbQuarterlyReportDto"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="56"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6067019792"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="40"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.606701713"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="36"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.606701713"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 0: Estraggo il body dal file ./TestData/requests/body/post_search.json"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="19"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6066972106"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{58805AE4-B807-4457-9CB6-E960C551B747}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="message" type="S" value="Sending the 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/search'."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6066979514"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/quarterly-reports/search ha risposto con status: 200 OK"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.606701713"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;data&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 201,&#xA;            &quot;quarter&quot;: 2,&#xA;            &quot;year&quot;: 2028,&#xA;            &quot;status&quot;: &quot;IN_PROGRESS&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-12&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-07-09&quot;,&#xA;            &quot;closureDate&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 181,&#xA;            &quot;quarter&quot;: 1,&#xA;            &quot;year&quot;: 2028,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-11-03&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 161,&#xA;            &quot;quarter&quot;: 4,&#xA;            &quot;year&quot;: 2027,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-10-27&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 141,&#xA;            &quot;quarter&quot;: 3,&#xA;            &quot;year&quot;: 2027,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-10-23&quot;,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-10-17&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 122,&#xA;            &quot;quarter&quot;: 2,&#xA;            &quot;year&quot;: 2027,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-09-30&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-09-30&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-10-16&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 121,&#xA;            &quot;quarter&quot;: 1,&#xA;            &quot;year&quot;: 2027,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-09-26&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-09-26&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-09-02&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 101,&#xA;            &quot;quarter&quot;: 4,&#xA;            &quot;year&quot;: 2026,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-09-01&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 85,&#xA;            &quot;quarter&quot;: 3,&#xA;            &quot;year&quot;: 2026,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-08-23&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-09-05&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-08-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 84,&#xA;            &quot;quarter&quot;: 2,&#xA;            &quot;year&quot;: 2026,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-08-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 83,&#xA;            &quot;quarter&quot;: 1,&#xA;            &quot;year&quot;: 2026,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-10-01&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-02-08&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-08-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 82,&#xA;            &quot;quarter&quot;: 4,&#xA;            &quot;year&quot;: 2025,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-08-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 81,&#xA;            &quot;quarter&quot;: 3,&#xA;            &quot;year&quot;: 2025,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-08-21&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-08-15&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-08-29&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 61,&#xA;            &quot;quarter&quot;: 2,&#xA;            &quot;year&quot;: 2025,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-08-10&quot;,&#xA;            &quot;cdaDate&quot;: &quot;2025-08-30&quot;,&#xA;            &quot;closureDate&quot;: &quot;2025-08-28&quot;&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 2,&#xA;            &quot;quarter&quot;: 1,&#xA;            &quot;year&quot;: 2025,&#xA;            &quot;status&quot;: &quot;CLOSED&quot;,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;cdaDate&quot;: null,&#xA;            &quot;closureDate&quot;: &quot;2025-08-26&quot;&#xA;        }&#xA;    ],&#xA;    &quot;total&quot;: 14&#xA;}"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="57"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6067020255"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;filter&quot;: {&#xA;        &quot;filters&quot;: [],&#xA;        &quot;logic&quot;: &quot;and&quot;&#xA;    },&#xA;    &quot;skip&quot;: 0,&#xA;    &quot;take&quot;: 15&#xA;}"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6066975579"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="message" type="S" value="E' stato salvato il report con id: 201"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="63"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.6067020602"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

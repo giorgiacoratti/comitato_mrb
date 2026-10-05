@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="45965.5313380787"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45965.5313321181"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{300CA9D5-AC29-4E0E-BFEF-0018CE3569C2}"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="name" type="S" value="TC0010_POST_CreateSpecificBinding [Script\TC0010_POST_CreateSpecificBinding - TC0010_POST_CreateSpecificBinding]"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="45965.5313320255"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45965.5313187963"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{580082E3-C360-4E5A-BA5F-B77319A3A596}"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="name" type="S" value="TC0009_POST_SpecificBindingSearch [Script\TC0009_POST_SpecificBindingSearch - TC0009_POST_SpecificBindingSearch]"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="45965.5313506829"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45965.5313443056"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{24DB4515-D0AB-47BC-8B8E-D946EE61AFBF}"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="name" type="S" value="TC0012_GET_SpecificID [Script\TC0012_GET_SpecificID - TC0012_GET_SpecificID]"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="45965.5313562384"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45965.5313507986"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{DBDB7DA1-28DD-4210-9ECD-0FC239D240CD}"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="name" type="S" value="TC0013_PATCH_SpecificID [Script\TC0013_PATCH_SpecificID - TC0013_PATCH_SpecificID]"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="45965.531344213"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="45965.5313382176"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{6E062C51-1BCB-4021-922F-8DE2F51ED8EA}"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="name" type="S" value="TC0011_POST_SpecificBulkDelete [Script\TC0011_POST_SpecificBulkDelete - TC0011_POST_SpecificBulkDelete]"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

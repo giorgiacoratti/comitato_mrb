@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067181481"/>
+				<Prp name="details" type="S" value="{51567F85-33DA-4438-B58F-59C1954AA1B0}"/>
+				<Prp name="start time" type="D" value="45967.606713588"/>
+				<Prp name="name" type="S" value="TC0010_POST_CreateSpecificBinding [Script\TC0010_POST_CreateSpecificBinding - TC0010_POST_CreateSpecificBinding]"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row4">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067263773"/>
+				<Prp name="details" type="S" value="{D325A1B7-9CC2-415F-A96D-5B7DB723E9EF}"/>
+				<Prp name="start time" type="D" value="45967.6067218982"/>
+				<Prp name="name" type="S" value="TC0013_PATCH_SpecificID [Script\TC0013_PATCH_SpecificID - TC0013_PATCH_SpecificID]"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067090625"/>
+				<Prp name="details" type="S" value="{5889FCA2-E3E8-46C3-A823-EEB340551655}"/>
+				<Prp name="start time" type="D" value="45967.6067021759"/>
+				<Prp name="name" type="S" value="Script Test Log [TC0011_POST_SearchDetails\TC0011_POST_SearchDetails]"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067134722"/>
+				<Prp name="details" type="S" value="{6357289A-9BDA-4A12-B7DE-6E4D42508A11}"/>
+				<Prp name="start time" type="D" value="45967.6067090625"/>
+				<Prp name="name" type="S" value="TC0009_POST_SpecificBindingSearch [Script\TC0009_POST_SpecificBindingSearch - TC0009_POST_SpecificBindingSearch]"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row5">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067308218"/>
+				<Prp name="details" type="S" value="{ADF0BAA4-78F7-4209-BA5C-92C0265519B7}"/>
+				<Prp name="start time" type="D" value="45967.6067265046"/>
+				<Prp name="name" type="S" value="TC0011_POST_SpecificBulkDelete [Script\TC0011_POST_SpecificBulkDelete - TC0011_POST_SpecificBulkDelete]"/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row3">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="45967.6067217824"/>
+				<Prp name="details" type="S" value="{F68ECB60-D8F3-4E5A-A9D3-35867EE79FBF}"/>
+				<Prp name="start time" type="D" value="45967.6067182176"/>
+				<Prp name="name" type="S" value="TC0012_GET_SpecificID [Script\TC0012_GET_SpecificID - TC0012_GET_SpecificID]"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

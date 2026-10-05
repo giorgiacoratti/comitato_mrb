@@ -1,0 +1,49 @@
+﻿import generic_calls, json
+
+base_url = ProjectSuite.Variables.base_path
+token = ProjectSuite.Variables.token_8883
+  
+  
+  
+""" 
+  Metodo che crea una PATCH request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/areas/{areaId}/evaluate
+    @param body_obj: body della request in formato JSON
+    @param report_id
+    @param quarterly_detail_id
+    @param area_id
+"""
+def PATCH_evaluate(body_obj, report_id, quarterly_detail_id, area_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/quarterly-details/'+quarterly_detail_id+'/areas/'+area_id+'/evaluate'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PATCH', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/areas
+    @param body_obj: body della request in formato JSON
+    @param report_id
+    @param quarterly_detail_id
+"""
+def GET_areas(report_id, quarterly_detail_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/quarterly-details/'+quarterly_detail_id+'/areas'
+  url = base_url+path
+  return generic_calls.send_request_generic('PATCH', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/areas/{areaId}
+    @param body_obj: body della request in formato JSON
+    @param report_id
+    @param quarterly_detail_id
+    @param area_id
+"""
+def GET_area_id(report_id, quarterly_detail_id, area_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/quarterly-details/'+quarterly_detail_id+'/areas/'+area_id
+  url = base_url+path
+  return generic_calls.send_request_generic('PATCH', url, token, path)

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 3">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Sending the 'PATCH' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/122/quarterly-details/704/update'."/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113056018"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 0: Estraggo il body dal file ./TestData/requests/body/TC0012_patch_update_detail.json e importo le project variables"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113050116"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 5">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/quarterly-reports/122/quarterly-details/704/update ha risposto con status: 200 OK"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113134722"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="line no" type="I" value="48"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113134722"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso QuarterlyDetailDetailDto"/>
+			<Prp name="line no" type="I" value="64"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113137037"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The 'PATCH' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/122/quarterly-details/704/update' was sent with the status code 200."/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113133681"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;id&quot;:704,&quot;mrbReport&quot;:{&quot;id&quot;:122,&quot;quarter&quot;:2,&quot;year&quot;:2027,&quot;status&quot;:&quot;IN_PROGRESS&quot;,&quot;committeeDate&quot;:&quot;2025-08-27&quot;,&quot;cdaDate&quot;:&quot;2025-08-27&quot;,&quot;closureDate&quot;:null},&quot;bank&quot;:{&quot;abi&quot;:&quot;07017&quot;,&quot;name&quot;:&quot;BANCA DI CREDITO COOPERATIVO DELCIRCEO&quot;},&quot;monitoring&quot;:false,&quot;classification&quot;:{&quot;id&quot;:0,&quot;classification&quot;:null,&quot;areaElements&quot;:[]},&quot;completedSections&quot;:3,&quot;totalSections&quot;:5,&quot;actions&quot;:[{&quot;actionType&quot;:&quot;ACTION_PLAN&quot;,&quot;requested&quot;:false,&quot;description&quot;:null,&quot;leastOneEvaluated&quot;:false,&quot;areas&quot;:[{&quot;id&quot;:5899,&quot;area&quot;:&quot;GENERAL_COUNSEL&quot;,&quot;areaName&quot;:&quot;General Counsel&quot;,&quot;required&quot;:false},{&quot;id&quot;:5900,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;,&quot;required&quot;:false},{&quot;id&quot;:5901,&quot;area&quot;:&quot;COMPLIANCE&quot;,&quot;areaName&quot;:&quot;Compliance&quot;,&quot;required&quot;:false},{&quot;id&quot;:5902,&quot;area&quot;:&quot;AML&quot;,&quot;areaName&quot;:&quot;AML&quot;,&quot;required&quot;:false},{&quot;id&quot;:5903,&quot;area&quot;:&quot;RISK&quot;,&quot;areaName&quot;:&quot;Risk&quot;,&quot;required&quot;:false},{&quot;id&quot;:5904,&quot;area&quot;:&quot;PIANIFICAZIONE&quot;,&quot;areaName&quot;:&quot;Pianificazione&quot;,&quot;required&quot;:false},{&quot;id&quot;:5905,&quot;area&quot;:&quot;NPL&quot;,&quot;areaName&quot;:&quot;NPL&quot;,&quot;required&quot;:false}]},{&quot;actionType&quot;:&quot;OBJECTIVES&quot;,&quot;requested&quot;:false,&quot;description&quot;:null,&quot;leastOneEvaluated&quot;:false,&quot;areas&quot;:[{&quot;id&quot;:5899,&quot;area&quot;:&quot;GENERAL_COUNSEL&quot;,&quot;areaName&quot;:&quot;General Counsel&quot;,&quot;required&quot;:false},{&quot;id&quot;:5900,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;,&quot;required&quot;:false},{&quot;id&quot;:5901,&quot;area&quot;:&quot;COMPLIANCE&quot;,&quot;areaName&quot;:&quot;Compliance&quot;,&quot;required&quot;:false},{&quot;id&quot;:5902,&quot;area&quot;:&quot;AML&quot;,&quot;areaName&quot;:&quot;AML&quot;,&quot;required&quot;:false},{&quot;id&quot;:5903,&quot;area&quot;:&quot;RISK&quot;,&quot;areaName&quot;:&quot;Risk&quot;,&quot;required&quot;:false},{&quot;id&quot;:5904,&quot;area&quot;:&quot;PIANIFICAZIONE&quot;,&quot;areaName&quot;:&quot;Pianificazione&quot;,&quot;required&quot;:false},{&quot;id&quot;:5905,&quot;area&quot;:&quot;NPL&quot;,&quot;areaName&quot;:&quot;NPL&quot;,&quot;required&quot;:false}]},{&quot;actionType&quot;:&quot;DIRECTIVE&quot;,&quot;requested&quot;:false,&quot;description&quot;:null,&quot;leastOneEvaluated&quot;:false,&quot;areas&quot;:[{&quot;id&quot;:5899,&quot;area&quot;:&quot;GENERAL_COUNSEL&quot;,&quot;areaName&quot;:&quot;General Counsel&quot;,&quot;required&quot;:false},{&quot;id&quot;:5900,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;,&quot;required&quot;:false},{&quot;id&quot;:5901,&quot;area&quot;:&quot;COMPLIANCE&quot;,&quot;areaName&quot;:&quot;Compliance&quot;,&quot;required&quot;:false},{&quot;id&quot;:5902,&quot;area&quot;:&quot;AML&quot;,&quot;areaName&quot;:&quot;AML&quot;,&quot;required&quot;:false},{&quot;id&quot;:5903,&quot;area&quot;:&quot;RISK&quot;,&quot;areaName&quot;:&quot;Risk&quot;,&quot;required&quot;:false},{&quot;id&quot;:5904,&quot;area&quot;:&quot;PIANIFICAZIONE&quot;,&quot;areaName&quot;:&quot;Pianificazione&quot;,&quot;required&quot;:false},{&quot;id&quot;:5905,&quot;area&quot;:&quot;NPL&quot;,&quot;areaName&quot;:&quot;NPL&quot;,&quot;required&quot;:false}]}]}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Fri, 26 Sep 2025 10:16:01 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-e167d66823420021b718960d 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 444&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;monitoring&quot;: false,&#xA;    &quot;classification&quot;: {&#xA;        &quot;id&quot;: null,&#xA;        &quot;classification&quot;: null&#xA;    },&#xA;    &quot;actions&quot;: [&#xA;        {&#xA;            &quot;actionType&quot;: &quot;ACTION_PLAN&quot;,&#xA;            &quot;requested&quot;: false,&#xA;            &quot;description&quot;: null,&#xA;            &quot;leastOneEvaluated&quot;: false,&#xA;            &quot;areas&quot;: null&#xA;        }&#xA;    ]&#xA;}"/>
+			<Prp name="line no" type="I" value="34"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113054398"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;id&quot;: 704,&#xA;    &quot;mrbReport&quot;: {&#xA;        &quot;id&quot;: 122,&#xA;        &quot;quarter&quot;: 2,&#xA;        &quot;year&quot;: 2027,&#xA;        &quot;status&quot;: &quot;IN_PROGRESS&quot;,&#xA;        &quot;committeeDate&quot;: &quot;2025-08-27&quot;,&#xA;        &quot;cdaDate&quot;: &quot;2025-08-27&quot;,&#xA;        &quot;closureDate&quot;: null&#xA;    },&#xA;    &quot;bank&quot;: {&#xA;        &quot;abi&quot;: &quot;07017&quot;,&#xA;        &quot;name&quot;: &quot;BANCA DI CREDITO COOPERATIVO DELCIRCEO&quot;&#xA;    },&#xA;    &quot;monitoring&quot;: false,&#xA;    &quot;classification&quot;: {&#xA;        &quot;id&quot;: 0,&#xA;        &quot;classification&quot;: null,&#xA;        &quot;areaElements&quot;: []&#xA;    },&#xA;    &quot;completedSections&quot;: 3,&#xA;    &quot;totalSections&quot;: 5,&#xA;    &quot;actions&quot;: [&#xA;        {&#xA;            &quot;actionType&quot;: &quot;ACTION_PLAN&quot;,&#xA;            &quot;requested&quot;: false,&#xA;            &quot;description&quot;: null,&#xA;            &quot;leastOneEvaluated&quot;: false,&#xA;            &quot;areas&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 5899,&#xA;                    &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;                    &quot;areaName&quot;: &quot;General Counsel&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5900,&#xA;                    &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                    &quot;areaName&quot;: &quot;Audit&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5901,&#xA;                    &quot;area&quot;: &quot;COMPLIANCE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Compliance&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5902,&#xA;                    &quot;area&quot;: &quot;AML&quot;,&#xA;                    &quot;areaName&quot;: &quot;AML&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5903,&#xA;                    &quot;area&quot;: &quot;RISK&quot;,&#xA;                    &quot;areaName&quot;: &quot;Risk&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5904,&#xA;                    &quot;area&quot;: &quot;PIANIFICAZIONE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Pianificazione&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5905,&#xA;                    &quot;area&quot;: &quot;NPL&quot;,&#xA;                    &quot;areaName&quot;: &quot;NPL&quot;,&#xA;                    &quot;required&quot;: false&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;OBJECTIVES&quot;,&#xA;            &quot;requested&quot;: false,&#xA;            &quot;description&quot;: null,&#xA;            &quot;leastOneEvaluated&quot;: false,&#xA;            &quot;areas&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 5899,&#xA;                    &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;                    &quot;areaName&quot;: &quot;General Counsel&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5900,&#xA;                    &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                    &quot;areaName&quot;: &quot;Audit&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5901,&#xA;                    &quot;area&quot;: &quot;COMPLIANCE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Compliance&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5902,&#xA;                    &quot;area&quot;: &quot;AML&quot;,&#xA;                    &quot;areaName&quot;: &quot;AML&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5903,&#xA;                    &quot;area&quot;: &quot;RISK&quot;,&#xA;                    &quot;areaName&quot;: &quot;Risk&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5904,&#xA;                    &quot;area&quot;: &quot;PIANIFICAZIONE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Pianificazione&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5905,&#xA;                    &quot;area&quot;: &quot;NPL&quot;,&#xA;                    &quot;areaName&quot;: &quot;NPL&quot;,&#xA;                    &quot;required&quot;: false&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;DIRECTIVE&quot;,&#xA;            &quot;requested&quot;: false,&#xA;            &quot;description&quot;: null,&#xA;            &quot;leastOneEvaluated&quot;: false,&#xA;            &quot;areas&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 5899,&#xA;                    &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;                    &quot;areaName&quot;: &quot;General Counsel&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5900,&#xA;                    &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                    &quot;areaName&quot;: &quot;Audit&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5901,&#xA;                    &quot;area&quot;: &quot;COMPLIANCE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Compliance&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5902,&#xA;                    &quot;area&quot;: &quot;AML&quot;,&#xA;                    &quot;areaName&quot;: &quot;AML&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5903,&#xA;                    &quot;area&quot;: &quot;RISK&quot;,&#xA;                    &quot;areaName&quot;: &quot;Risk&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5904,&#xA;                    &quot;area&quot;: &quot;PIANIFICAZIONE&quot;,&#xA;                    &quot;areaName&quot;: &quot;Pianificazione&quot;,&#xA;                    &quot;required&quot;: false&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 5905,&#xA;                    &quot;area&quot;: &quot;NPL&quot;,&#xA;                    &quot;areaName&quot;: &quot;NPL&quot;,&#xA;                    &quot;required&quot;: false&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}"/>
+			<Prp name="line no" type="I" value="65"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113137963"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="line no" type="I" value="32"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113054398"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{5927A1D1-38F0-4691-B84A-85E5F3A800C9}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 6">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="line no" type="I" value="44"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="45926.5113134722"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,25 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia PATCH /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/areas/{areaId}/elements/{elementId}/update-fields (TC0020)
+  response body: ListResultEvaluationFieldDto
+"""
+ListResultEvaluationFieldDto = Schema(
+  {
+    Optional("data"): [
+      {
+        "id": int,
+        "type": str,
+        "value": Or(dict, None)
+      }
+    ],
+    Optional("total"): int
+  }
+)

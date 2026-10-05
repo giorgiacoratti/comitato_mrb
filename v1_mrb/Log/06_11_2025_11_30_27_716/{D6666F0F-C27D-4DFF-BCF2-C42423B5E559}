@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 10">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="E' stato salvato il report con id: 102"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="57"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795010764"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{B68F981C-2490-432A-92AD-A0E2ED8D125B}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="34"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795002662"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4794972801"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Sending the 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/search'."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4794974769"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 8">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso ListResultGeneralBindingDirectiveDto"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="50"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795008796"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Request body: {&#xA;    &quot;filter&quot;: {&#xA;        &quot;filters&quot;: [],&#xA;        &quot;logic&quot;: &quot;and&quot;&#xA;    },&#xA;    &quot;skip&quot;: 0,&#xA;    &quot;take&quot;: 15&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4794973032"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="--- STEP 0: Estraggo il body dal file ./TestData/requests/body/post_search.json"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4794971181"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;data&quot;:[{&quot;id&quot;:102,&quot;banks&quot;:&quot;test1&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-12&quot;,&quot;committeeDate&quot;:&quot;2025-11-22&quot;,&quot;subject&quot;:&quot;test1 oggetto&quot;,&quot;feedback&quot;:&quot;test1 RISCONTRO&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:134,&quot;banks&quot;:&quot;test direttiva 1234;.&amp;&quot;,&quot;owner&quot;:{&quot;id&quot;:4,&quot;area&quot;:&quot;AML&quot;,&quot;areaName&quot;:&quot;AML&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test 1234&quot;,&quot;feedback&quot;:&quot;test 5678&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:135,&quot;banks&quot;:&quot;test GC&quot;,&quot;owner&quot;:{&quot;id&quot;:1,&quot;area&quot;:&quot;GENERAL_COUNSEL&quot;,&quot;areaName&quot;:&quot;General Counsel&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test oggetto GC&quot;,&quot;feedback&quot;:&quot;test riscontro GC&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:136,&quot;banks&quot;:&quot;test Audit&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test oggetto audit&quot;,&quot;feedback&quot;:&quot;test riscontro audit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:137,&quot;banks&quot;:&quot;test compliance&quot;,&quot;owner&quot;:{&quot;id&quot;:3,&quot;area&quot;:&quot;COMPLIANCE&quot;,&quot;areaName&quot;:&quot;Compliance&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-03&quot;,&quot;subject&quot;:&quot;test oggetto compliance&quot;,&quot;feedback&quot;:&quot;test riscontro compliance&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:138,&quot;banks&quot;:&quot;test Risk&quot;,&quot;owner&quot;:{&quot;id&quot;:5,&quot;area&quot;:&quot;RISK&quot;,&quot;areaName&quot;:&quot;Risk&quot;},&quot;feedbackDeadlineDate&quot;:null,&quot;committeeDate&quot;:null,&quot;subject&quot;:&quot;test oggetto risk&quot;,&quot;feedback&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:139,&quot;banks&quot;:&quot;test pianificazione&quot;,&quot;owner&quot;:{&quot;id&quot;:6,&quot;area&quot;:&quot;PIANIFICAZIONE&quot;,&quot;areaName&quot;:&quot;Pianificazione&quot;},&quot;feedbackDeadlineDate&quot;:null,&quot;committeeDate&quot;:null,&quot;subject&quot;:null,&quot;feedback&quot;:&quot;test riscontro pianificazione&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:140,&quot;banks&quot;:&quot;test NPL&quot;,&quot;owner&quot;:{&quot;id&quot;:7,&quot;area&quot;:&quot;NPL&quot;,&quot;areaName&quot;:&quot;NPL&quot;},&quot;feedbackDeadlineDate&quot;:null,&quot;committeeDate&quot;:&quot;2025-11-01&quot;,&quot;subject&quot;:null,&quot;feedback&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:141,&quot;banks&quot;:&quot;test Audit&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test oggetto audit&quot;,&quot;feedback&quot;:&quot;test riscontro audit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:142,&quot;banks&quot;:&quot;test Audit&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test oggetto audit&quot;,&quot;feedback&quot;:&quot;test riscontro audit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:143,&quot;banks&quot;:&quot;test Audit&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:&quot;2025-11-03&quot;,&quot;committeeDate&quot;:&quot;2025-11-04&quot;,&quot;subject&quot;:&quot;test oggetto audit&quot;,&quot;feedback&quot;:&quot;test riscontro audit&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:161,&quot;banks&quot;:&quot;Tutte le bancheeeeeee&quot;,&quot;owner&quot;:null,&quot;feedbackDeadlineDate&quot;:null,&quot;committeeDate&quot;:null,&quot;subject&quot;:null,&quot;feedback&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null},{&quot;id&quot;:162,&quot;banks&quot;:&quot;Tutte le banche&quot;,&quot;owner&quot;:{&quot;id&quot;:2,&quot;area&quot;:&quot;AUDIT&quot;,&quot;areaName&quot;:&quot;Audit&quot;},&quot;feedbackDeadlineDate&quot;:null,&quot;committeeDate&quot;:null,&quot;subject&quot;:null,&quot;feedback&quot;:&quot;dsdsaadsdsdas&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;evaluation&quot;:null}],&quot;total&quot;:13}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Thu, 06 Nov 2025 10:30:06 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-ae780c69411f21c2ffa67b68 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 40&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The 'POST' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/search' was sent with the status code 200."/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="24"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4794999074"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795002431"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;data&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 102,&#xA;            &quot;banks&quot;: &quot;test1&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-12&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-22&quot;,&#xA;            &quot;subject&quot;: &quot;test1 oggetto&quot;,&#xA;            &quot;feedback&quot;: &quot;test1 RISCONTRO&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 134,&#xA;            &quot;banks&quot;: &quot;test direttiva 1234;.&amp;&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 4,&#xA;                &quot;area&quot;: &quot;AML&quot;,&#xA;                &quot;areaName&quot;: &quot;AML&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test 1234&quot;,&#xA;            &quot;feedback&quot;: &quot;test 5678&quot;,&#xA;            &quot;status&quot;: &quot;ARCHIVED&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 135,&#xA;            &quot;banks&quot;: &quot;test GC&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 1,&#xA;                &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;                &quot;areaName&quot;: &quot;General Counsel&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto GC&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro GC&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 136,&#xA;            &quot;banks&quot;: &quot;test Audit&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto audit&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro audit&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 137,&#xA;            &quot;banks&quot;: &quot;test compliance&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 3,&#xA;                &quot;area&quot;: &quot;COMPLIANCE&quot;,&#xA;                &quot;areaName&quot;: &quot;Compliance&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto compliance&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro compliance&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 138,&#xA;            &quot;banks&quot;: &quot;test Risk&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 5,&#xA;                &quot;area&quot;: &quot;RISK&quot;,&#xA;                &quot;areaName&quot;: &quot;Risk&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: null,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;subject&quot;: &quot;test oggetto risk&quot;,&#xA;            &quot;feedback&quot;: null,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 139,&#xA;            &quot;banks&quot;: &quot;test pianificazione&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 6,&#xA;                &quot;area&quot;: &quot;PIANIFICAZIONE&quot;,&#xA;                &quot;areaName&quot;: &quot;Pianificazione&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: null,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;subject&quot;: null,&#xA;            &quot;feedback&quot;: &quot;test riscontro pianificazione&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 140,&#xA;            &quot;banks&quot;: &quot;test NPL&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 7,&#xA;                &quot;area&quot;: &quot;NPL&quot;,&#xA;                &quot;areaName&quot;: &quot;NPL&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: null,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-01&quot;,&#xA;            &quot;subject&quot;: null,&#xA;            &quot;feedback&quot;: null,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 141,&#xA;            &quot;banks&quot;: &quot;test Audit&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto audit&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro audit&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 142,&#xA;            &quot;banks&quot;: &quot;test Audit&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto audit&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro audit&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 143,&#xA;            &quot;banks&quot;: &quot;test Audit&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: &quot;2025-11-03&quot;,&#xA;            &quot;committeeDate&quot;: &quot;2025-11-04&quot;,&#xA;            &quot;subject&quot;: &quot;test oggetto audit&quot;,&#xA;            &quot;feedback&quot;: &quot;test riscontro audit&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 161,&#xA;            &quot;banks&quot;: &quot;Tutte le bancheeeeeee&quot;,&#xA;            &quot;owner&quot;: null,&#xA;            &quot;feedbackDeadlineDate&quot;: null,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;subject&quot;: null,&#xA;            &quot;feedback&quot;: null,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 162,&#xA;            &quot;banks&quot;: &quot;Tutte le banche&quot;,&#xA;            &quot;owner&quot;: {&#xA;                &quot;id&quot;: 2,&#xA;                &quot;area&quot;: &quot;AUDIT&quot;,&#xA;                &quot;areaName&quot;: &quot;Audit&quot;&#xA;            },&#xA;            &quot;feedbackDeadlineDate&quot;: null,&#xA;            &quot;committeeDate&quot;: null,&#xA;            &quot;subject&quot;: null,&#xA;            &quot;feedback&quot;: &quot;dsdsaadsdsdas&quot;,&#xA;            &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;            &quot;evaluation&quot;: null&#xA;        }&#xA;    ],&#xA;    &quot;total&quot;: 13&#xA;}"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="51"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795009375"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/general-binding-directives/search ha risposto con status: 200 OK"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="date" type="D" value="45967.4795001389"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

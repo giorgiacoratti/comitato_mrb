@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 0">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493005556"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493043403"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;id&quot;: 3,&#xA;    &quot;referenceDate&quot;: &quot;2025-11-03&quot;,&#xA;    &quot;note&quot;: &quot;test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234. test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.          test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.&quot;&#xA;}"/>
+			<Prp name="line no" type="I" value="43"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="7"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493043403"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso GeneralBindingDirectiveAttributesDto"/>
+			<Prp name="line no" type="I" value="42"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="6"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 4">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493042245"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493042245"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/general-binding-directives/attributes ha risposto con status: 200 OK"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 2">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;id&quot;:3,&quot;referenceDate&quot;:&quot;2025-11-03&quot;,&quot;note&quot;:&quot;test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234. test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.          test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.test di inserimento nota per disposizioni vincolanti 1234.&quot;}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Tue, 04 Nov 2025 12:10:41 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-41ed09693ec911e4f7062839 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 7&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493041088"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="The 'GET' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/attributes' was sent with the status code 200."/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{0DC8B9C7-304C-4837-9EB3-010CDDD7E0B0}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493042245"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="date" type="D" value="45965.5493006713"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Sending the 'GET' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/general-binding-directives/attributes'."/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

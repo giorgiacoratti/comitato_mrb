@@ -1,0 +1,28 @@
+{
+  "skip": 0,
+  "sort": [
+    {
+      "field": "string",
+      "dir": "asc",
+      "ignoreCase": true
+    }
+  ],
+  "take": 0,
+  "filter": {
+    "logic": "and",
+    "filters": [
+      "string",
+      {
+        "field": "string",
+        "ignoreCase": true,
+        "operator": "eq",
+        "value": {},
+        "localDate": true,
+        "isoDate": true,
+        "timestamp": true,
+        "date": true,
+        "boolean": true
+      }
+    ]
+  }
+}

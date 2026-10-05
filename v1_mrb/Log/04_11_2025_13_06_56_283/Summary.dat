@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;8f397bf8-c5c0-4b09-9952-dfcac2cff6d8&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5465604398"/>
+						<Prp name="duration" type="I" value="736"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADEAOAAzADEAMAAxADUALQBCADcANQBGAC0ANAA3AEQAOQAtAEEARgA4ADEALQBBADEARgBCAEIAMAAyADAAOABEADcAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="736"/>
+						<Prp name="name" type="S" value="TC0008_PATCH_Attributes"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The child test TC0008_PATCH_Attributes failed"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The child test TC0006_PATCH_GenBindingDir failed"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5464934607"/>
+						<Prp name="duration" type="I" value="6531"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADcAMAAzADUANgBGAEQALQA3AEIAOAA4AC0ANAA1ADUAQwAtADkAMQBBADAALQBGADMAMAA0ADYAQQA1AEUAOQA0AEQAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="1704"/>
+						<Prp name="name" type="S" value="TC0002_POST_Search"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="starttime" type="D" value="45965.5465128356"/>
+						<Prp name="duration" type="I" value="338"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADgAQgBGADEAMgBFAEYALQBDADYANAA2AC0ANAAwADUAOAAtAEEANwAxADEALQBGADIAMgBDADgANAAzAEQANwBFADMANAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="338"/>
+						<Prp name="name" type="S" value="TC0005_GET_GenBindingDirID"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="NameError: name 'saved_body' is not defined"/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45965.5465168634"/>
+						<Prp name="duration" type="I" value="3753"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEYAOQA5ADMARAA3AEUALQAxADcARQAyAC0ANAAwADIANAAtADkAOABFADQALQBFADkAMQBGADEAMQBEAEMARQAyADQAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="3753"/>
+						<Prp name="name" type="S" value="TC0006_PATCH_GenBindingDir"/>
+					</Node>
+				</Node>
+				<Prp name="starttime" type="D" value="45965.5464934607"/>
+				<Prp name="duration" type="I" value="6531"/>
+				<Prp name="failedtests" type="I" value="3"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="v1_mrb"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="failedtests" type="I" value="3"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="key" type="S" value="{46EF5FA1-FE65-423E-A5F1-126B2F3AC29D}"/>
+		<Prp name="testname" type="S" value="v1_mrb: W2_general_binding\TC0002_POST_Search"/>
+		<Prp name="starttime" type="D" value="45965.5464848495"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="4"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="stop" type="D" value="45965.5465701968"/>
+		<Prp name="name" type="S" value="comitato_mrb"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+	</Node>
+</Nodes>

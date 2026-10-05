@@ -1,0 +1,98 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/quarterly-reports/search (TC0001)
+  response body: ListResultMrbQuarterlyReportDto
+"""
+ListResultMrbQuarterlyReportDto = Schema(
+  {
+    Optional("data"): [
+      {
+        "id": int,
+        "quarter": int,
+        "year": int,
+        "status": str,
+        Optional("committeeDate"): Or(None, str),
+        Optional("cdaDate"): Or(None, str),
+        Optional("closureDate"): Or(None, str)
+      }
+    ],
+    Optional("total"): int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia PATCH /v1/mrb/quarterly-reports/{reportId}/update-status (TC0002), per l'interfaccia PATCH /v1/mrb/quarterly-reports/{reportId}/update-dates (TC0003),
+    per l'interfaccia  GET /v1/mrb/quarterly-reports/{reportId} (TC0004) e per l'interfaccia GET /v1/mrb/quarterly-reports/{reportId}/offset/{offset} (TC0008)
+  response body: MrbQuarterlyReportDto
+"""
+MrbQuarterlyReportDto = Schema(
+  {
+    "id": int,
+    "quarter": int,
+    "year": int,
+    "status": str,
+    Optional("committeeDate"): str,
+    Optional("cdaDate"): str,
+    Optional("closureDate"): str
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/{reportId}/to-close (TC0005)
+  response body: MrbQuarterlyReportToCloseDto
+"""
+MrbQuarterlyReportToCloseDto = Schema(
+  {
+    "toClose": bool
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/{reportId}/status (TC0006) e per l'interfaccia GET /v1/mrb/quarterly-reports/{reportId}/status-offset/{offset} (TC0007)
+  response body: MrbQuarterlyReportStatusDto
+"""
+MrbQuarterlyReportStatusDto = Schema(
+  {
+    "status": str
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/years (TC0009)
+  response body: ListResultLong
+"""
+ListResultLong = Schema(
+  {
+    Optional("data"): [
+      int
+    ],
+    Optional("total"): int
+  }
+)
+
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/quarterly-reports/status (TC0010)
+  response body: ListResultQuarterlyStatus
+"""
+ListResultQuarterlyStatus = Schema(
+  {
+    Optional("data"): [
+      str
+    ],
+    Optional("total"): int
+  }
+)

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The child test TC0018_GET_AreaId finished with the Warning status"/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="979"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="durationwithoutchildren" type="I" value="359"/>
+						<Prp name="starttime" type="D" value="45926.528388831"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCAEQANABEADAAQwA4ADIALQA3AEUANwBFAC0ANABGADYAMwAtADgAQgAxADkALQBDADAANAAyAEUANwA3ADYAOQBEADUARQB9AC8AewAzAEMAMgBEADAANQA1AEYALQBCAEIAMAA0AC0ANAA2ADAAMgAtAEIANwBCAEQALQAxADIAQQA1AEIANwAzAEYARQBFADcAQQB9AC8AGhHL3v86Z0CLViaRMGjlQwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="name" type="S" value="TC0017_GET_Areas"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="313"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="313"/>
+						<Prp name="starttime" type="D" value="45926.5283927662"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDADcANwAzADUAQwA1ADYALQBBADAARQA2AC0ANAAzAEMAMAAtAEIARQA5AEMALQBFAEEAMQBBADUAMQBGAEYAQwBFADkAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0016_PATCH_Evaluate"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings">
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="Response body: {&#xA;    &quot;id&quot;: 6003,&#xA;    &quot;quarterlyDetailId&quot;: 717,&#xA;    &quot;area&quot;: {&#xA;        &quot;id&quot;: 6003,&#xA;        &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;        &quot;areaName&quot;: &quot;General Counsel&quot;&#xA;    },&#xA;    &quot;actions&quot;: [&#xA;        {&#xA;            &quot;actionType&quot;: &quot;ACTION_PLAN&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: &quot;ADEGUATED_ADMIN&quot;,&#xA;            &quot;evaluation&quot;: true,&#xA;            &quot;motivation&quot;: &quot;TEST&quot;&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;OBJECTIVES&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: null,&#xA;            &quot;evaluation&quot;: null,&#xA;            &quot;motivation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;DIRECTIVE&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: null,&#xA;            &quot;evaluation&quot;: null,&#xA;            &quot;motivation&quot;: null&#xA;        }&#xA;    ],&#xA;    &quot;elements&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 8330,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Informazioni di contesto&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9954,&#xA;                    &quot;name&quot;: &quot;Prossimo rinnovo CdA&quot;,&#xA;                    &quot;type&quot;: &quot;TEXT&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9951,&#xA;                    &quot;name&quot;: &quot;Genere meno rappresentato in CdA&quot;,&#xA;                    &quot;type&quot;: &quot;TEXT&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9952,&#xA;                    &quot;name&quot;: &quot;Nr. amm.ri in carica &gt; 5 mandati&quot;,&#xA;                    &quot;type&quot;: &quot;INTEGER&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9953,&#xA;                    &quot;name&quot;: &quot;Nr. amm.ri senza esp. part. rilevanti&quot;,&#xA;                    &quot;type&quot;: &quot;INTEGER&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 8331,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Profili di governance&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9955,&#xA;                    &quot;name&quot;: null,&#xA;                    &quot;type&quot;: &quot;TEXT_AREA&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 8332,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Valutazione D&amp;O&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9956,&#xA;                    &quot;name&quot;: null,&#xA;                    &quot;type&quot;: &quot;TEXT_AREA&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}"/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="La risposta del servizio NON rispetta lo schema atteso, verificare"/>
+							</Node>
+							<Node name="warning2">
+								<Prp name="msg" type="S" value="Schema atteso: &quot;Schema({'id': &lt;class 'int'&gt;, 'quarterlyDetailId': &lt;class 'int'&gt;, 'area': {'id': &lt;class 'int'&gt;, 'area': &lt;class 'str'&gt;, 'areaName': &lt;class 'str'&gt;}, 'actions': [{'actionType': &lt;class 'str'&gt;, 'requested': &lt;class 'bool'&gt;, 'description': Or(None, &lt;class 'str'&gt;), Optional('status'): Or(None, &lt;class 'str'&gt;), Optional('evaluation'): Or(None, &lt;class 'str'&gt;), Optional('motivation'): Or(None, &lt;class 'str'&gt;)}], 'elements': [{'id': &lt;class 'int'&gt;, 'areaId': &lt;class 'int'&gt;, 'name': &lt;class 'str'&gt;, 'status': Or(None, &lt;class 'str'&gt;), Optional('motivation'): Or(None, &lt;class 'str'&gt;), 'previousQuarterFields': [{'id': &lt;class 'int'&gt;, 'name': &lt;class 'str'&gt;, 'type': &lt;class 'str'&gt;, Optional('value'): Or(&lt;class 'dict'&gt;, None, &lt;class 'str'&gt;), Optional('selectOptions'): [{'value': Or(&lt;class 'dict'&gt;, &lt;class 'str'&gt;), 'label': &lt;class 'str'&gt;}]}], 'currentQuarterFields': [{'id': &lt;class 'int'&gt;, 'name': Or(None, &lt;class 'str'&gt;), 'type': &lt;class 'str'&gt;, Optional('value'): Or(&lt;class 'dict'&gt;, None, &lt;class 'str'&gt;), Optional('selectOptions'): [{'value': &lt;class 'str'&gt;, 'label': &lt;class 'str'&gt;}]}]}]})&quot;"/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="307"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="durationwithoutchildren" type="I" value="307"/>
+						<Prp name="starttime" type="D" value="45926.5283964699"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADMARgBGAEYAMwA1ADUALQA4ADIAOAA3AC0ANAA0ADQAMwAtAEEAOABDAEUALQBDAEMARABEAEIAOQAyADkAMAAwADEAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0018_GET_AreaId"/>
+					</Node>
+				</Node>
+				<Prp name="duration" type="I" value="979"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="2"/>
+				<Prp name="starttime" type="D" value="45926.528388831"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="v1_mrb"/>
+			</Node>
+		</Node>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="name" type="S" value="comitato_mrb"/>
+		<Prp name="key" type="S" value="{58ADD974-9B5D-4F6C-832A-A6C83F21F6D0}"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="45926.5283693287"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="stop" type="D" value="45926.5284011458"/>
+		<Prp name="warningtests" type="I" value="2"/>
+		<Prp name="testname" type="S" value="v1_mrb: evaluation_areas"/>
+		<Prp name="executionstatus" type="I" value="1"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+	</Node>
+</Nodes>

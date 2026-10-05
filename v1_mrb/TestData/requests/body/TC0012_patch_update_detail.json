@@ -1,0 +1,16 @@
+{
+  "monitoring": false,
+  "classification": {
+    "id": null,
+    "classification": null
+  },
+  "actions": [
+    {
+      "actionType": "ACTION_PLAN",
+      "requested": false,
+      "description": null,
+      "leastOneEvaluated": false,
+      "areas": null
+    }
+  ]
+}

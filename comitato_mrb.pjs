@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{E4B4BDDB-F568-4CA7-AB44-C5207D0B3BA6}">
+	<children>
+		<child name="v1_mrb" key="{CE017F38-CB6E-4CF4-AA64-D6DAA8052F86}" path="v1_mrb\v1_mrb.mds" />
+	</children>
+	<testItems key="{2778D3F8-A52D-4E17-8C8D-8CD0A0C6F6C7}">
+		<children>
+			<testItem key="{CE017F38-CB6E-4CF4-AA64-D6DAA8052F86}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{38B9301F-B014-47DE-9DB6-474C08C1CA02}">
+		<data Version="4">
+			<Items>
+				<Variable Name="token_8883" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="base_path" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<analysis key="{70B86D96-63BA-41DE-BA69-E4A6F573100B}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

@@ -1,0 +1,91 @@
+﻿import generic_calls, json
+
+base_url = ProjectSuite.Variables.base_path
+token = ProjectSuite.Variables.token_8883
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/search
+    @param body_obj: body della request in formato JSON
+"""
+def POST_search(body_obj) :
+  path = '/v1/mrb/general-binding-directives/search'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/create
+    @param body_obj: body della request in formato JSON
+"""
+def POST_create_general(body_obj) :
+  path = '/v1/mrb/general-binding-directives/create'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/bulk-delete
+    @param body_obj: body della request in formato JSON
+"""
+def POST_bulk_delete(body_obj) :
+  path = '/v1/mrb/general-binding-directives/bulk-delete'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/{id}
+    @param general_binding_id
+"""
+def GET_general_binding_id(general_binding_id) :
+  path = '/v1/mrb/general-binding-directives/'+general_binding_id
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una PATCH request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/{id}
+    @param general_binding_id
+"""
+def PATCH_general_binding_id(body_obj, general_binding_id) :
+  path = '/v1/mrb/general-binding-directives/'+general_binding_id
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PATCH', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/attributes
+"""
+def GET_attributes() :
+  path = '/v1/mrb/general-binding-directives/attributes'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una PATCH request e la invia all'endpoint al path 
+  /v1/mrb/general-binding-directives/attributes
+"""
+def PATCH_attributes(body_obj) :
+  path = '/v1/mrb/general-binding-directives/attributes'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PATCH', url, token, path, body=body_string)

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{5BD62302-51B1-4A9E-8B04-D708349973B0}"/>
+			<Prp name="unit 1" type="S" value="{94D4B168-F818-4483-BB3F-35A8118FED4D}"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="date" type="D" value="45926.7382806829"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 1: Chiamata al servizio"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="35"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 7">
+			<Prp name="date" type="D" value="45926.7382840278"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="La response del servizio rispetta lo schema atteso EvaluationAreaDetailDto"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="line no" type="I" value="65"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="date" type="D" value="45926.7382804745"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 0: Importo le Project Variables ---"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 3">
+			<Prp name="date" type="D" value="45926.7382837037"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="Response status text: OK&#xA;&#xA;Response body:&#xA;{&quot;id&quot;:6003,&quot;quarterlyDetailId&quot;:717,&quot;area&quot;:{&quot;id&quot;:6003,&quot;area&quot;:&quot;GENERAL_COUNSEL&quot;,&quot;areaName&quot;:&quot;General Counsel&quot;},&quot;actions&quot;:[{&quot;actionType&quot;:&quot;ACTION_PLAN&quot;,&quot;requested&quot;:true,&quot;description&quot;:null,&quot;status&quot;:&quot;ADEGUATED_ADMIN&quot;,&quot;evaluation&quot;:true,&quot;motivation&quot;:&quot;TEST&quot;},{&quot;actionType&quot;:&quot;OBJECTIVES&quot;,&quot;requested&quot;:true,&quot;description&quot;:null,&quot;status&quot;:null,&quot;evaluation&quot;:null,&quot;motivation&quot;:null},{&quot;actionType&quot;:&quot;DIRECTIVE&quot;,&quot;requested&quot;:true,&quot;description&quot;:null,&quot;status&quot;:null,&quot;evaluation&quot;:null,&quot;motivation&quot;:null}],&quot;elements&quot;:[{&quot;id&quot;:8330,&quot;areaId&quot;:6003,&quot;name&quot;:&quot;Informazioni di contesto&quot;,&quot;status&quot;:null,&quot;motivation&quot;:null,&quot;previousQuarterFields&quot;:[],&quot;currentQuarterFields&quot;:[{&quot;id&quot;:9954,&quot;name&quot;:&quot;Prossimo rinnovo CdA&quot;,&quot;type&quot;:&quot;TEXT&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]},{&quot;id&quot;:9951,&quot;name&quot;:&quot;Genere meno rappresentato in CdA&quot;,&quot;type&quot;:&quot;TEXT&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]},{&quot;id&quot;:9952,&quot;name&quot;:&quot;Nr. amm.ri in carica &gt; 5 mandati&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]},{&quot;id&quot;:9953,&quot;name&quot;:&quot;Nr. amm.ri senza esp. part. rilevanti&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]}]},{&quot;id&quot;:8331,&quot;areaId&quot;:6003,&quot;name&quot;:&quot;Profili di governance&quot;,&quot;status&quot;:null,&quot;motivation&quot;:null,&quot;previousQuarterFields&quot;:[],&quot;currentQuarterFields&quot;:[{&quot;id&quot;:9955,&quot;name&quot;:null,&quot;type&quot;:&quot;TEXT_AREA&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]}]},{&quot;id&quot;:8332,&quot;areaId&quot;:6003,&quot;name&quot;:&quot;Valutazione D&amp;O&quot;,&quot;status&quot;:null,&quot;motivation&quot;:null,&quot;previousQuarterFields&quot;:[],&quot;currentQuarterFields&quot;:[{&quot;id&quot;:9956,&quot;name&quot;:null,&quot;type&quot;:&quot;TEXT_AREA&quot;,&quot;value&quot;:null,&quot;selectOptions&quot;:[]}]}]}&#xA;&#xA;All response headers:&#xA;Cache-Control: no-cache&#xA;Connection: close&#xA;Date: Fri, 26 Sep 2025 15:42:51 GMT&#xA;Via: 1.1 fcvlawi2.fc.crtnet ()&#xA;Content-Type: application/json&#xA;Server: istio-envoy&#xA;Max-Forwards: 20&#xA;Strict-Transport-Security: max-age=63072000; includeSubDomains&#xA;X-CorrelationID: Id-7bb4d6687251e4bc8019c91f 0&#xA;Content-Security-Policy: frame-ancestors 'self';&#xA;Referrer-Policy: strict-origin&#xA;X-Content-Type-Options: nosniff&#xA;x-envoy-upstream-service-time: 11&#xA;X-Frame-Options: DENY&#xA;X-Permitted-Cross-Domain-Policies: none&#xA;&#xA;"/>
+			<Prp name="message" type="S" value="The 'GET' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/122/quarterly-details/704/areas/6003' was sent with the status code 200."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="date" type="D" value="45926.7382840625"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="Item restituito: {&#xA;    &quot;id&quot;: 6003,&#xA;    &quot;quarterlyDetailId&quot;: 717,&#xA;    &quot;area&quot;: {&#xA;        &quot;id&quot;: 6003,&#xA;        &quot;area&quot;: &quot;GENERAL_COUNSEL&quot;,&#xA;        &quot;areaName&quot;: &quot;General Counsel&quot;&#xA;    },&#xA;    &quot;actions&quot;: [&#xA;        {&#xA;            &quot;actionType&quot;: &quot;ACTION_PLAN&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: &quot;ADEGUATED_ADMIN&quot;,&#xA;            &quot;evaluation&quot;: true,&#xA;            &quot;motivation&quot;: &quot;TEST&quot;&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;OBJECTIVES&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: null,&#xA;            &quot;evaluation&quot;: null,&#xA;            &quot;motivation&quot;: null&#xA;        },&#xA;        {&#xA;            &quot;actionType&quot;: &quot;DIRECTIVE&quot;,&#xA;            &quot;requested&quot;: true,&#xA;            &quot;description&quot;: null,&#xA;            &quot;status&quot;: null,&#xA;            &quot;evaluation&quot;: null,&#xA;            &quot;motivation&quot;: null&#xA;        }&#xA;    ],&#xA;    &quot;elements&quot;: [&#xA;        {&#xA;            &quot;id&quot;: 8330,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Informazioni di contesto&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9954,&#xA;                    &quot;name&quot;: &quot;Prossimo rinnovo CdA&quot;,&#xA;                    &quot;type&quot;: &quot;TEXT&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9951,&#xA;                    &quot;name&quot;: &quot;Genere meno rappresentato in CdA&quot;,&#xA;                    &quot;type&quot;: &quot;TEXT&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9952,&#xA;                    &quot;name&quot;: &quot;Nr. amm.ri in carica &gt; 5 mandati&quot;,&#xA;                    &quot;type&quot;: &quot;INTEGER&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                },&#xA;                {&#xA;                    &quot;id&quot;: 9953,&#xA;                    &quot;name&quot;: &quot;Nr. amm.ri senza esp. part. rilevanti&quot;,&#xA;                    &quot;type&quot;: &quot;INTEGER&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 8331,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Profili di governance&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9955,&#xA;                    &quot;name&quot;: null,&#xA;                    &quot;type&quot;: &quot;TEXT_AREA&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        },&#xA;        {&#xA;            &quot;id&quot;: 8332,&#xA;            &quot;areaId&quot;: 6003,&#xA;            &quot;name&quot;: &quot;Valutazione D&amp;O&quot;,&#xA;            &quot;status&quot;: null,&#xA;            &quot;motivation&quot;: null,&#xA;            &quot;previousQuarterFields&quot;: [],&#xA;            &quot;currentQuarterFields&quot;: [&#xA;                {&#xA;                    &quot;id&quot;: 9956,&#xA;                    &quot;name&quot;: null,&#xA;                    &quot;type&quot;: &quot;TEXT_AREA&quot;,&#xA;                    &quot;value&quot;: null,&#xA;                    &quot;selectOptions&quot;: []&#xA;                }&#xA;            ]&#xA;        }&#xA;    ]&#xA;}"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="line no" type="I" value="66"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="date" type="D" value="45926.7382838657"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="--- STEP 2: Validazione della response"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="line no" type="I" value="49"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="date" type="D" value="45926.7382841667"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="E' stato salvato l'elemento con id: 8330"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="line no" type="I" value="72"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="date" type="D" value="45926.7382807986"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="Sending the 'GET' request to 'https://apimanager.integrazione.servizi.allitude.it:8065/api-pwm-integrazione/mrb/v1/mrb/quarterly-reports/122/quarterly-details/704/areas/6003'."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="date" type="D" value="45926.7382838657"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="Response status CORRETTO."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="line no" type="I" value="45"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="date" type="D" value="45926.7382838426"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="message" type="S" value="Il servizio /v1/mrb/quarterly-reports/122/quarterly-details/704/areas/6003 ha risposto con status: 200 OK"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="linkmessage" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

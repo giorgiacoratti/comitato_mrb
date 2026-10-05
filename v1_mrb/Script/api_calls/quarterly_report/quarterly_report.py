@@ -1,0 +1,133 @@
+﻿import generic_calls, json
+
+base_url = ProjectSuite.Variables.base_path
+token = ProjectSuite.Variables.token_8883
+
+
+import sys
+sys.path.append(r"C:\Users\gcoratti\Documents\TestComplete15Projects\comitato_mrb\v1_mrb\Script\api_calls")
+  
+  
+  
+""" 
+  Metodo che crea una POST request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/search
+    @param body_obj: body della request in formato JSON
+"""
+def POST_report_search(body_obj) :
+  path = '/v1/mrb/quarterly-reports/search'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('POST', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PATCH request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/update-status
+    @param body_obj: body della request in formato JSON
+    @param report_id
+"""
+def PATCH_update_status(body_obj, report_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/update-status'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PATCH', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una PATCH request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/update-dates
+    @param body_obj: body della request in formato JSON
+    @param report_id
+"""
+def PATCH_update_dates(body_obj, report_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/update-dates'
+  url = base_url+path
+  body_string = json.dumps(body_obj)
+  return generic_calls.send_request_generic('PATCH', url, token, path, body=body_string)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId} 
+    @param report_id
+"""
+def GET_report(report_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/to-close 
+    @param report_id
+"""
+def GET_report_to_close(report_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/to-close'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/status
+    @param report_id
+"""
+def GET_status(report_id) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/status'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/status-offset/{offset}
+    @param report_id
+    @param offset
+"""
+def GET_status_offset(report_id, offset) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/status-offset/'+offset
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/{reportId}/offset/{offset}
+    @param report_id
+    @param offset
+"""
+def GET_offset_report(report_id, offset) :
+  path = '/v1/mrb/quarterly-reports/'+report_id+'/offset/'+offset
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/years
+"""
+def GET_years() :
+  path = '/v1/mrb/quarterly-reports/years'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)
+  
+  
+  
+""" 
+  Metodo che crea una GET request e la invia all'endpoint al path 
+  /v1/mrb/quarterly-reports/status
+"""
+def GET_status_list() :
+  path = '/v1/mrb/quarterly-reports/status'
+  url = base_url+path
+  return generic_calls.send_request_generic('GET', url, token, path)

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test5">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;f6ce5c94-dd8e-4b0d-ba80-ebde3a3ba74e&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="776"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADQANAA5ADgAMgAxADkALQA4AEYANgBDAC0ANAAzADMANAAtADgANgBCAEQALQAwAEIANgBDAEQANwA5ADIAOAAwADMAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="776"/>
+						<Prp name="starttime" type="D" value="45965.5403734259"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="TC0004_POST_BulkDelete"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The child test TC0005_GET_GenBindingDirID finished with the Warning status"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The child test TC0008_PATCH_Attributes failed"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The child test TC0006_PATCH_GenBindingDir failed"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="14668"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADcANABGADAAMgA0AEIALQA2ADIARgA1AC0ANAA3AEEANAAtADkAMgBGADIALQAxAEYARgAwAEYAQwA3ADUAQwA3ADIARAB9AC8AewAzAEMAMgBEADAANQA1AEYALQBCAEIAMAA0AC0ANAA2ADAAMgAtAEIANwBCAEQALQAxADIAQQA1AEIANwAzAEYARQBFADcAQQB9AC8AGhHL3v86Z0CLViaRMGjlQwAAAAAvAGUAbQBwAHQAeQA="/>
+						<Prp name="durationwithoutchildren" type="I" value="652"/>
+						<Prp name="starttime" type="D" value="45965.5401947917"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="TC0002_POST_Search"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;bdf9eb39-e13a-4793-8fa7-bf87f8287ea6&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:401,&quot;message&quot;:&quot;Not authorized&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="746"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADQAOABFADMAMQAyADcALQA0ADQAMQAyAC0ANAAwADkAMAAtADkAMgA3ADAALQBBADIARABBADkAMABBAEMAMgA2ADEARgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="746"/>
+						<Prp name="starttime" type="D" value="45965.5403646875"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="TC0003_POST_CreateGenBindingDirective"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning2">
+								<Prp name="msg" type="S" value="Schema atteso: &quot;Schema({'id': &lt;class 'int'&gt;, 'banks': &lt;class 'str'&gt;, Optional('owner'): Or(None, {Optional('id'): &lt;class 'int'&gt;, Optional('area'): &lt;class 'str'&gt;, Optional('areaName'): &lt;class 'str'&gt;}), Optional('feedbackDeadlineDate'): Or(&lt;class 'str'&gt;, None), Optional('committeeDate'): Or(&lt;class 'str'&gt;, None), Optional('subject'): &lt;class 'str'&gt;, Optional('feedback'): &lt;class 'str'&gt;, Optional('status'): &lt;class 'str'&gt;, Optional('evaluation'): &lt;class 'bool'&gt;})&quot;"/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="La risposta del servizio NON rispetta lo schema atteso, verificare"/>
+							</Node>
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="Response body: {&#xA;    &quot;id&quot;: 102,&#xA;    &quot;banks&quot;: &quot;test1&quot;,&#xA;    &quot;owner&quot;: null,&#xA;    &quot;feedbackDeadlineDate&quot;: &quot;2025-11-12&quot;,&#xA;    &quot;committeeDate&quot;: &quot;2025-11-22&quot;,&#xA;    &quot;subject&quot;: &quot;test1 oggetto&quot;,&#xA;    &quot;feedback&quot;: &quot;test1 RISCONTRO&quot;,&#xA;    &quot;status&quot;: &quot;ACTIVE&quot;,&#xA;    &quot;evaluation&quot;: null&#xA;}"/>
+							</Node>
+						</Node>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="306"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADQAQQA2ADcAQgA2ADYALQAyAEMAQwA1AC0ANABBADQAMAAtADgARQBDAEMALQBGAEMAMwAzADkAMgBCADYAMwA5AEMAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="306"/>
+						<Prp name="starttime" type="D" value="45965.5402021296"/>
+						<Prp name="status" type="I" value="1"/>
+						<Prp name="name" type="S" value="TC0005_GET_GenBindingDirID"/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="NameError: name 'general_binding_id' is not defined"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="12847"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA4ADMANQBCADMAOQA3AEMALQAxADkANQA1AC0ANAA0ADYAQwAtADkARQAxAEMALQA1AEUAMgA3ADgAMwA2ADQANgAyADMAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="12847"/>
+						<Prp name="starttime" type="D" value="45965.5402157986"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="TC0008_PATCH_Attributes"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="Messaggio di errore: {&quot;id&quot;:&quot;fea7e544-845f-4224-a18b-b951af24d798&quot;,&quot;type&quot;:&quot;CUSTOM_MESSAGE_ERROR&quot;,&quot;title&quot;:&quot;System error with custom message&quot;,&quot;status&quot;:404,&quot;message&quot;:&quot;No directive found&quot;,&quot;errors&quot;:null,&quot;messageData&quot;:{&quot;id&quot;:102}}"/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Response status NON CORRETTO. Lo status PREVISTO era: 200"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="863"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwADQANQA4ADYANAA5AEQALQA2ADEANQA2AC0ANABEAEQARgAtADgAMABGADgALQBDADIAMQBGAEMAQwBFAEQANABFADEAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="863"/>
+						<Prp name="starttime" type="D" value="45965.5402056713"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="TC0006_PATCH_GenBindingDir"/>
+					</Node>
+					<Node name="test6">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="duration" type="I" value="301"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3AEYAOQAyADkAQQAxADgALQBGAEMAOAA5AC0ANABCAEMANQAtAEIAQQA3ADkALQAyADcAMgBBAEMAMQAzADEAQgA4ADIAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="durationwithoutchildren" type="I" value="301"/>
+						<Prp name="starttime" type="D" value="45965.5403824074"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="TC0007_GET_Attributes"/>
+					</Node>
+				</Node>
+				<Prp name="duration" type="I" value="16491"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="1"/>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="45965.5401947917"/>
+				<Prp name="name" type="S" value="v1_mrb"/>
+				<Prp name="failedtests" type="I" value="5"/>
+			</Node>
+		</Node>
+		<Prp name="tests" type="I" value="7"/>
+		<Prp name="key" type="S" value="{886AB315-1719-480B-A584-F44885864945}"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="45965.5401908681"/>
+		<Prp name="stop" type="D" value="45965.540387037"/>
+		<Prp name="failedtests" type="I" value="5"/>
+		<Prp name="warningtests" type="I" value="1"/>
+		<Prp name="name" type="S" value="comitato_mrb"/>
+		<Prp name="testname" type="S" value="v1_mrb: W2_general_binding"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+	</Node>
+</Nodes>

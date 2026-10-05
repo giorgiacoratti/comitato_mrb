@@ -1,0 +1,46 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/specific-binding-directives/search (TC0009)
+  response body: ListResultSpecificBindingDirectiveDto
+"""
+ListResultSpecificBindingDirectiveDto = Schema(
+  {
+    Optional("data"): [
+      {
+        Optional("id"): int,
+        Optional("feedbackDeadlineDate"): str,
+        Optional("committeeDate"): str,
+        Optional("subject"): str,
+        Optional("feedback"): str,
+        Optional("evaluation"): bool
+      }
+    ],
+    Optional("total"): int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/specific-binding-directives/create (TC0010),
+                per l'interfaccia GET /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/specific-binding-directives/{id} (TC0012) e 
+                per l'interfaccia PATCH /v1/mrb/quarterly-reports/{reportId}/quarterly-details/{quarterlyDetailId}/specific-binding-directives/{id} (TC0013)
+  response body: SpecificBindingDirectiveDto
+"""
+SpecificBindingDirectiveDto = Schema(
+  {
+    Optional("id"): int,
+    Optional("feedbackDeadlineDate"): str,
+    Optional("committeeDate"): str,
+    Optional("subject"): str,
+    Optional("feedback"): str,
+    Optional("evaluation"): bool
+  }
+)

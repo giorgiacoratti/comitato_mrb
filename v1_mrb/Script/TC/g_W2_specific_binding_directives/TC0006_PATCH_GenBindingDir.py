@@ -1,0 +1,59 @@
+﻿## Descrizione: Lanciare PATCH /v1/mrb/general-binding-directives/{id} con request body GeneralBindingDirectiveDto
+## Risultato atteso: 200 OK con response body GeneralBindingDirectiveDto
+
+## Descrizione: Viene aggiornata la direttiva di binding generale
+
+import utils, constants, json, general, general_response_schemas
+
+expected_status_code = constants.OK_200
+body_file_path = './TestData/requests/body/W2_TC0006_patch_general_binding.json'
+
+def TC0006_PATCH_GenBindingDir():
+  
+  ## Estraggo il body dal file .json e lo converto in obj per verificarne il formato 
+  Log.Message('--- STEP 0: Importo le project varibles e estraggo il body dal file '+body_file_path)
+  
+  ## Salvo la variabile general_binding_id
+  if Project.Variables.general_binding_id :
+    general_binding_id = Project.Variables.general_binding_id
+  else:
+    Log.Error('general_binding_id non presente nelle Project Variables! Lanciare l\'Execution Group o valorizzare la Project Variable')
+  
+  body_obj = json.loads(Project.Variables.ResponseBody_General)
+  Log.Message("Body recuperato: " + json.dumps(body_obj, indent=4))
+
+  ## Chiamo il servizio
+  Log.Message('--- STEP 1: Chiamata al servizio')
+  
+  Log.Message('Request body: '+json.dumps(body_obj, default=str, indent=4))
+  
+  resp = general.PATCH_general_binding_id(body_obj, general_binding_id)
+  
+  ## Verifico e leggo lo status code 
+  if resp.StatusCode != expected_status_code:
+    if resp.Text != '':
+      Log.Warning('Messaggio di errore: '+resp.Text)
+    Log.Error('Response status NON CORRETTO. Lo status PREVISTO era: '+str(expected_status_code))
+  else:
+    Log.Message('Response status CORRETTO.')
+    
+    ## Verifico la response validandola contro lo schema atteso 
+    ## Se sono presenti dati li salvo in variabili locali e li loggo 
+    Log.Message('--- STEP 2: Validazione della response')
+    
+    if resp.Text == '':
+      Log.Error('La response non contiene un body')
+    else:
+      response_body_dict = json.loads(resp.Text)
+    
+      schema = general_response_schemas.GeneralBindingDirectiveDto
+    
+      if not utils.validate(schema, response_body_dict):
+        Log.Warning('La risposta del servizio NON rispetta lo schema atteso, verificare')
+        Log.Warning('Response body: '+json.dumps(response_body_dict, default=str, indent=4))
+        Log.Warning('Schema atteso: '+json.dumps(schema, default=str, indent=4))
+        
+      else:
+        
+        Log.Message('La response del servizio rispetta lo schema atteso GeneralBindingDirectiveDto')        
+        Log.Message('Item restituito: '+json.dumps(response_body_dict, default=str, indent=4))

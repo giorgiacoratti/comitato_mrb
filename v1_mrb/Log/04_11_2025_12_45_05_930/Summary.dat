@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="report_id non presente nelle Project Variables! Lanciare l'Execution Group o valorizzare la Project Variable"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="518"/>
+						<Prp name="durationwithoutchildren" type="I" value="518"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2AEUAMAA2ADIAQwA1ADEALQAxAEIAQwBCAC0ANAAwADIAMQAtADkAMgAyAEYALQA4AEQARQAyAEYANQAxAEUARAA4AEUAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0011_POST_SpecificBulkDelete"/>
+						<Prp name="starttime" type="D" value="45965.5313382176"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="report_id non presente nelle Project Variables! Lanciare l'Execution Group o valorizzare la Project Variable"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="551"/>
+						<Prp name="durationwithoutchildren" type="I" value="551"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADQARABCADQANQAxADUALQBEADAAQQBCAC0ANAA3AEIAQwAtADgAQgA4AEUALQBEADkANAA2AEUARQA2ADEAQQBGAEIARgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0012_GET_SpecificID"/>
+						<Prp name="starttime" type="D" value="45965.5313443056"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="report_id non presente nelle Project Variables! Lanciare l'Execution Group o valorizzare la Project Variable"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="1143"/>
+						<Prp name="durationwithoutchildren" type="I" value="1143"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADgAMAAwADgAMgBFADMALQBDADMANgAwAC0ANABFADUAQQAtAEIAQQA1AEYALQBCADcANwAzADEAOQBBADMAQQA1ADkANgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0009_POST_SpecificBindingSearch"/>
+						<Prp name="starttime" type="D" value="45965.5313187963"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="report_id non presente nelle Project Variables! Lanciare l'Execution Group o valorizzare la Project Variable"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="470"/>
+						<Prp name="durationwithoutchildren" type="I" value="470"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEAEIARABCADcARABBADEALQAyADgARABEAC0ANAAyADEAMAAtADkARQBDAEQALQAwAEYAQwAyADMAOQBEADIANAAwAEMARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0013_PATCH_SpecificID"/>
+						<Prp name="starttime" type="D" value="45965.5313507986"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="report_id non presente nelle Project Variables! Lanciare l'Execution Group o valorizzare la Project Variable"/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="515"/>
+						<Prp name="durationwithoutchildren" type="I" value="515"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADAAMABDAEEAOQBEADUALQBBAEMAMgA5AC0ANABFADAARQAtAEIARgBFAEYALQAwADAAMQA4AEMARQAzADUANgA5AEMAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="TC0010_POST_CreateSpecificBinding"/>
+						<Prp name="starttime" type="D" value="45965.5313321181"/>
+					</Node>
+				</Node>
+				<Prp name="loadtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="3197"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="5"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="name" type="S" value="v1_mrb"/>
+				<Prp name="starttime" type="D" value="45965.5313187963"/>
+			</Node>
+		</Node>
+		<Prp name="key" type="S" value="{7E8C6305-7B36-4503-8548-330685F209A8}"/>
+		<Prp name="stop" type="D" value="45965.5313570718"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="starttime" type="D" value="45965.5313187269"/>
+		<Prp name="failedtests" type="I" value="5"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="testname" type="S" value="v1_mrb: W2_specific_binding"/>
+		<Prp name="loadtests" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="host" type="S" value="8NY1HS3-A081"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="5"/>
+		<Prp name="name" type="S" value="comitato_mrb"/>
+		<Prp name="user" type="S" value="gcoratti"/>
+	</Node>
+</Nodes>

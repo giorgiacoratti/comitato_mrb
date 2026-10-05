@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="api_calls">
+			<folder name="evaluation_areas">
+				<child name="evaluation_areas" key="{6438633D-6B6C-4B02-9BF6-7174A57F3FFF}" path="api_calls\evaluation_areas\evaluation_areas.py" />
+				<child name="evaluation_areas_response_schemas" key="{E14E337F-44F4-4781-ADBE-A93EA43AE7E9}" path="api_calls\evaluation_areas\evaluation_areas_response_schemas.py" />
+			</folder>
+			<folder name="evaluation_elements">
+				<child name="evaluation_elements" key="{5928B902-94DF-4252-B668-A892AC97629F}" path="api_calls\evaluation_elements\evaluation_elements.py" />
+				<child name="evaluation_elements_response_schemas" key="{4382F99F-21F7-4770-A076-5414C912DE0F}" path="api_calls\evaluation_elements\evaluation_elements_response_schemas.py" />
+			</folder>
+			<folder name="evaluation_fields">
+				<child name="evaluation_fields" key="{EE9ABEF6-808B-4E3E-8A82-5C9AC0C98AC3}" path="api_calls\evaluation_fields\evaluation_fields.py" />
+				<child name="evaluation_fields_response_schemas" key="{8AECC2EF-C605-495B-9CE4-3AA020072F9C}" path="api_calls\evaluation_fields\evaluation_fields_response_schemas.py" />
+			</folder>
+			<folder name="quarterly_details">
+				<child name="quarterly_details" key="{ACD7A560-E848-4D7B-B736-A2ACEB9B8F78}" path="api_calls\quarterly_details\quarterly_details.py" />
+				<child name="quarterly_details_response_schemas" key="{6727DD2B-830E-4F8E-8121-545878EA2F33}" path="api_calls\quarterly_details\quarterly_details_response_schemas.py" />
+			</folder>
+			<folder name="quarterly_report">
+				<child name="quarterly_report" key="{5B96E323-038E-4139-B531-16407B508245}" path="api_calls\quarterly_report\quarterly_report.py" />
+				<child name="quarterly_report_response_schemas" key="{883924D2-CB5F-4053-A5BE-2FA49A529D6A}" path="api_calls\quarterly_report\quarterly_report_response_schemas.py" />
+			</folder>
+			<folder name="W2_evaluation_areas">
+				<child name="W2_evaluation_areas" key="{26D257FC-64AA-41D1-AF20-73A25AD8E222}" path="api_calls\W2_evaluation_areas\W2_evaluation_areas.py" />
+				<child name="W2_eval_areas_response_schemas" key="{675184E0-69FB-4DCE-92C0-C570119FE1D0}" path="api_calls\W2_evaluation_areas\W2_eval_areas_response_schemas.py" />
+			</folder>
+			<folder name="W2_specific">
+				<child name="specific" key="{20993319-D42C-4B2C-95C4-975AD3E7CF8C}" path="api_calls\W2_specific\specific.py" />
+				<child name="specific_response_schemas" key="{94FD4FF2-7ACB-430B-8B24-6DE339B349B5}" path="api_calls\W2_specific\specific_response_schemas.py" />
+			</folder>
+			<folder name="W2_general">
+				<child name="general" key="{2A73D900-D00B-46A0-B2DB-A960C30C53E0}" path="api_calls\W2_general\general.py" />
+				<child name="general_response_schemas" key="{7C5B845B-CB3A-4405-9BDF-F2FA4DDA8D51}" path="api_calls\W2_general\general_response_schemas.py" />
+			</folder>
+			<child name="generic_calls" key="{94D4B168-F818-4483-BB3F-35A8118FED4D}" path="api_calls\generic_calls.py" />
+		</folder>
+		<folder name="TC">
+			<folder name="a_quarterly_report">
+				<child name="TC0001_POST_ReportSearch" key="{58805AE4-B807-4457-9CB6-E960C551B747}" path="TC\a_quarterly_report\TC0001_POST_ReportSearch.py" />
+				<child name="TC0002_PATCH_UpdateStatus" key="{26974C6A-B729-4FE2-9309-D51133438344}" path="TC\a_quarterly_report\TC0002_PATCH_UpdateStatus.py" />
+				<child name="TC0003_PATCH_UpdateDates" key="{2245979C-4B77-40DB-A910-7B17856A14CB}" path="TC\a_quarterly_report\TC0003_PATCH_UpdateDates.py" />
+				<child name="TC0004_GET_Report" key="{F7C5D999-F6E8-4506-B2DB-447DAC29DDF5}" path="TC\a_quarterly_report\TC0004_GET_Report.py" />
+				<child name="TC0005_GET_ReportToClose" key="{F5765D99-FA59-4C1A-9F55-1DD338CD7F5C}" path="TC\a_quarterly_report\TC0005_GET_ReportToClose.py" />
+				<child name="TC0006_GET_Status" key="{0407700D-85A4-4D7D-AC9C-A5685DDD0286}" path="TC\a_quarterly_report\TC0006_GET_Status.py" />
+				<child name="TC0007_GET_StatusOffset" key="{F6117B08-EB1B-4B48-BB56-49F42D87391C}" path="TC\a_quarterly_report\TC0007_GET_StatusOffset.py" />
+				<child name="TC0008_GET_OffsetReport" key="{3896F0EB-C4B7-4835-A44E-B025D4D6D027}" path="TC\a_quarterly_report\TC0008_GET_OffsetReport.py" />
+				<child name="TC0009_GET_Years" key="{9B73ADD0-866B-4F77-8E2B-A2655F9083A2}" path="TC\a_quarterly_report\TC0009_GET_Years.py" />
+				<child name="TC0010_GET_StatusList" key="{667C0F7A-8459-483C-81CD-EB2CE444D05B}" path="TC\a_quarterly_report\TC0010_GET_StatusList.py" />
+			</folder>
+			<folder name="b_quarterly_details">
+				<child name="TC0011_POST_SearchDetails" key="{05A4D128-69D8-4019-A686-1F6DE0F48192}" path="TC\b_quarterly_details\TC0011_POST_SearchDetails.py" />
+				<child name="TC0012_PATCH_UpdateDetail" key="{5927A1D1-38F0-4691-B84A-85E5F3A800C9}" path="TC\b_quarterly_details\TC0012_PATCH_UpdateDetail.py" />
+				<child name="TC0013_GET_Detail" key="{5FAA19D7-BA08-4C2D-B5D1-DD8A58D136BA}" path="TC\b_quarterly_details\TC0013_GET_Detail.py" />
+				<child name="TC0014_GET_QuarterlyDetailsClass" key="{98E08068-9407-40E4-B7A0-43B2AEB9C7D4}" path="TC\b_quarterly_details\TC0014_GET_QuarterlyDetailsClass.py" />
+				<child name="TC0015_GET_DetailsClassifications" key="{CCB765EA-FEE5-4FD1-A3A9-DD07E303FAE9}" path="TC\b_quarterly_details\TC0015_GET_DetailsClassifications.py" />
+			</folder>
+			<folder name="c_evaluation_areas">
+				<child name="TC0016_PATCH_Evaluate" key="{51036CD6-6D2B-4494-9191-C2E1CA4C9289}" path="TC\c_evaluation_areas\TC0016_PATCH_Evaluate.py" />
+				<child name="TC0017_GET_Areas" key="{26F04D19-EFCA-46B3-A436-A3417AD52247}" path="TC\c_evaluation_areas\TC0017_GET_Areas.py" />
+				<child name="TC0018_GET_AreaId" key="{5BD62302-51B1-4A9E-8B04-D708349973B0}" path="TC\c_evaluation_areas\TC0018_GET_AreaId.py" />
+			</folder>
+			<folder name="d_evaluation_elements">
+				<child name="TC0019_PATCH_ApproveElement" key="{FB76B948-E273-4015-BFB7-968AF788A73C}" path="TC\d_evaluation_elements\TC0019_PATCH_ApproveElement.py" />
+			</folder>
+			<folder name="e_evaluation_fields">
+				<child name="TC0020_PATCH_UpdateFields" key="{83AB0FBF-1457-4872-94C5-B8A2CF868990}" path="TC\e_evaluation_fields\TC0020_PATCH_UpdateFields.py" />
+			</folder>
+			<folder name="h_W2_specific_binding_directives">
+				<child name="TC0009_POST_SpecificBindingSearch" key="{890D8DEA-BD1A-4362-BABA-84B317522AFA}" path="TC\h_W2_general_binding_directives\TC0009_POST_SpecificBindingSearch.py" />
+				<child name="TC0010_POST_CreateSpecificBinding" key="{A53AA41E-F44D-461F-95BB-B93C0A9D554C}" path="TC\h_W2_general_binding_directives\TC0010_POST_CreateSpecificBinding.py" />
+				<child name="TC0011_POST_SpecificBulkDelete" key="{6355E929-C600-429B-89DA-B55419767D18}" path="TC\h_W2_general_binding_directives\TC0011_POST_SpecificBulkDelete.py" />
+				<child name="TC0012_GET_SpecificID" key="{8C9CC2B6-2F75-4D49-95BC-F7D9D38A20B7}" path="TC\h_W2_general_binding_directives\TC0012_GET_SpecificID.py" />
+				<child name="TC0013_PATCH_SpecificID" key="{55DF59B8-0EEC-4DE5-B2BB-64FD7DE3F3F5}" path="TC\h_W2_general_binding_directives\TC0013_PATCH_SpecificID.py" />
+			</folder>
+			<folder name="g_W2_general_binding_directives">
+				<child name="TC0002_POST_Search" key="{B68F981C-2490-432A-92AD-A0E2ED8D125B}" path="TC\g_W2_specific_binding_directives\TC0002_POST_Search.py" />
+				<child name="TC0003_POST_CreateGenBindingDirective" key="{1D0A015C-6B05-401C-838A-1C6446436C4B}" path="TC\g_W2_specific_binding_directives\TC0003_POST_CreateGenBindingDirective.py" />
+				<child name="TC0004_POST_BulkDelete" key="{70257967-9B5F-4921-A0DA-B823943232D8}" path="TC\g_W2_specific_binding_directives\TC0004_POST_BulkDelete.py" />
+				<child name="TC0005_GET_GenBindingDirID" key="{FB6B8EA4-EDE2-4F83-9011-197E9AFFBEE9}" path="TC\g_W2_specific_binding_directives\TC0005_GET_GenBindingDirID.py" />
+				<child name="TC0006_PATCH_GenBindingDir" key="{972EE61A-BA1E-404E-8272-F5EDAFED084A}" path="TC\g_W2_specific_binding_directives\TC0006_PATCH_GenBindingDir.py" />
+				<child name="TC0007_GET_Attributes" key="{0DC8B9C7-304C-4837-9EB3-010CDDD7E0B0}" path="TC\g_W2_specific_binding_directives\TC0007_GET_Attributes.py" />
+				<child name="TC0008_PATCH_Attributes" key="{7CC325EA-BE9E-4EA9-B1C6-B04E2C585EAD}" path="TC\g_W2_specific_binding_directives\TC0008_PATCH_Attributes.py" />
+			</folder>
+			<folder name="f_W2_evaluation_areas_config">
+				<child name="TC0001_GET_Areas" key="{6F84C2D0-25A1-401C-96A9-80DD1105F303}" path="TC\f_W2_evaluation_areas_config\TC0001_GET_Areas.py" />
+			</folder>
+		</folder>
+		<folder name="utils">
+			<child name="constants" key="{E6DA40A0-053A-4BA9-B168-5AE46B936A4F}" path="utils\constants.py" />
+			<child name="set_environment" key="{5E648E46-9D1F-40CB-B1AA-0722911929A2}" path="utils\set_environment.py" />
+			<child name="utils" key="{600E7980-FFB3-46EC-B755-859C52FE24BA}" path="utils\utils.py" />
+		</folder>
+	</children>
+</Root>

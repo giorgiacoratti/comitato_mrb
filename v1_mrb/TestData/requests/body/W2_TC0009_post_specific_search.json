@@ -1,0 +1,9 @@
+{
+  "skip": 10,
+  "sort": [ ],
+  "take": 0,
+  "filter": {
+    "logic": "and",
+    "filters": [ ]
+  }
+}

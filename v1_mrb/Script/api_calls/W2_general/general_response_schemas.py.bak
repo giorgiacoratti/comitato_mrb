@@ -1,0 +1,76 @@
+﻿import sys
+sys.path.insert(0, "../lib")
+## Importo la posizione della libreria schema perché non la trova più in automatico... capire perché!
+#sys.path.append(r"./Python311/Lib")
+sys.path.append(r"C:\Program Files (x86)\SmartBear\TestComplete 15\Bin\Extensions\Python\Python311\Lib")
+
+from schema import Schema, Or, Optional
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/general-binding-directives/search (TC0002)
+  response body: ListResultGeneralBindingDirectiveDto
+"""
+ListResultGeneralBindingDirectiveDto = Schema(
+  {
+    Optional("data"): [
+      {
+        "id": int,
+        "banks": str,
+        Optional("owner"): Or(None, 
+          {
+            Optional("id"): int,
+            Optional("area"): str,
+            Optional("areaName"): str
+          }
+        ),
+        Optional("feedbackDeadlineDate"): Or(str, None),
+        Optional("committeeDate"): Or(str, None),
+        Optional("subject"): Or(str, None),
+        Optional("feedback"): Or(str, None),
+        Optional("status"): Or(str, None),
+        Optional("evaluation"): Or(bool, None)  
+      }
+    ],
+    Optional("total"): int
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia POST /v1/mrb/general-binding-directives/create (TC0003),
+                per l'interfaccia GET /v1/mrb/general-binding-directives/{id} (TC0005) e
+                per l'interfaccia PATCH /v1/mrb/general-binding-directives/{id} (TC0006)                
+  response body: GeneralBindingDirectiveDto
+"""
+GeneralBindingDirectiveDto = Schema(
+  {
+    "id": int,
+    "banks": str,
+    Optional("owner"): Or(None, {
+      Optional("id"): int,
+      Optional("area"): str,
+      Optional("areaName"): str
+    }),
+    Optional("feedbackDeadlineDate"): Or(str, None),
+    Optional("committeeDate"): Or(str, None),
+    Optional("subject"): str,
+    Optional("feedback"): str,
+    Optional("status"): str,
+    Optional("evaluation"): bool
+  }
+)
+
+
+"""
+  Schema atteso gli interfaccia GET /v1/mrb/general-binding-directives/attributes (TC0007) e
+                e per l'interfaccia PATCH /v1/mrb/general-binding-directives/attributes (TC0008)
+  response body: GeneralBindingDirectiveAttributesDto
+"""
+GeneralBindingDirectiveAttributesDto = Schema(
+  {
+    "id": int,
+    Optional("referenceDate"): str,
+    Optional("note"): str
+  }
+)
